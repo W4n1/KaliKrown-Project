@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: #d4cdc5;
+  color: #e0dac4;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 2em;
+}
+
+body .feedback {
+  min-height: 100%;
+}
+
+/* Start of nav rules*/
+/* add background color to the top nav*/
+header {
+  background-color: #c5bf9c;
+  padding: 1em;
+  width: 100%;
+}
+
+.header {
+  padding-bottom: 10px;
+  height: 116px;
+  padding-top: 20px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: -55px;
+}
+
+.logo-image {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: #573c13;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-table;
+  margin: 0 1em;
+  padding-top: 25px;
+  font-size: 1em;
+  font-weight: bold;
+}
+/* below is the nav bar design*/
+.nav .nav-bar a:last-child {
+  padding-right: 0;
+}
+
+.nav .nav-bar a:hover {
+  color: #7c272773;
+}
+.nav a::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #8a2f0ee8;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 200ms;
+}
+/* used a pseudo for the hovering effect below */
+.nav a:hover::before {
+  width: 100%;
+}
+/* Nav rules end*/
+/* banner ruling starts here*/
+/*editing of the banner image*/
+.index-banner {
+  width: 100%;
+  height: 50vh;
+  padding: 0.05vh;
+  background-image: url("../images/bannerImage1.JPG");
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  position: relative;
+  top: 10px;
+}
+
+.faqp-banner {
+  width: 100%;
+  height: 100vh;
+  padding: 0.05vh;
+  background-image: url("../images/image4.jpg");
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  position: relative;
+  top: 10px;
+}
+
+.faqp-banner h1 {
+  word-spacing: 10px;
+  letter-spacing: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #6b2121;
+  text-align: center;
+}
+.content .index-banner .heading h1 {
+  color: #6b2121;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.heading h1 strong {
+  word-spacing: 10px;
+  letter-spacing: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.index-banner .sub-heading p {
+  font-size: 35px;
+  text-align: center;
+  color: #89c980;
+  font-weight: bold;
+}
+
+.index-banner .sub-heading p {
+  border-style: solid;
+  border-width: thick;
+  border: 5px solid cornsilk;
+  width: 200px;
+  height: 225px;
+  padding-right: 10px;
+}
+
+.index-banner p {
+  font-size: 30px;
+  color: #41332e;
+}
+
+/* banner section ruling ends here*/
+section {
+  /* all SECTIONS within the page, the rule below will apply to it*/
+  background: rgb(185, 182, 171);
+  color: #41332e;
+  padding: 60px;
+}
+
+.content .index-banner .heading h1 {
+  color: rgb(107, 33, 33);
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  background: #c5bf9c;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.footer-links li a {
+  color: #573c13;
+  margin: 0 1em;
+}
+
+/* banner rules starts here */
+.banner {
+  width: 100%;
+  height: 650px;
+  background-image: url("../images/bannerImage1.JPG");
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3d3017;
+  width: 100%;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: rgb(231, 224, 154);
+  text-align: center;
+  cursor: pointer;
+  margin: 1em 0;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+/*banner rules end here*/
+/*feedback ruling starts here*/
+.feedback div,
+form,
+input,
+p {
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: 1em 0;
+}
+
+.feedback . h2 h4 {
+  margin: 22px 0 4px;
+  color: #095484;
+}
+.feedback .testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 3px;
+}
+
+.feedback .testbox form {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  vertical-align: middle;
+  outline: none;
+}
+
+textarea {
+  outline: none;
+  padding: 1em;
+  border-radius: 10px;
+  width: 100%;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.asterisk {
+  color: red;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+.form-field {
+  margin: 1em 0;
+}
+
+th,
+td {
+  width: 21%;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  vertical-align: unset;
+  line-height: 18px;
+  font-weight: 400;
+  word-break: break-all;
+}
+
+.first-col {
+  width: 16%;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+}
+
+.btn-block {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #095484;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+
+  border: 2px solid red;
+}
+
+.btn-block button:hover {
+  background-color: #0666a3;
+}
+/* feedback ruling ends here*/
+/* the style ruling starts here */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 1em;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(83, 55, 41);
+  background-color: rgb(161, 161, 123);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin: 1em 0 0;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+div .index-styles {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+div .index-styles {
+  border: 1px solid #777;
+}
+
+.contact .item.social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid rgb(71, 14, 14);
+  margin-left: 10px;
+  margin-top: 22px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.item.social > a:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  .nav-link {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 568px) {
+  th,
+  td {
+    word-break: keep-all;
+  }
+}
