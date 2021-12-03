@@ -1,34 +1,32 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
 
 body {
-  background: #d4cdc5;
-  color: #e0dac4;
+  background: ivory;
+  color: antiquewhite;
   font-family: Roboto, Arial, sans-serif;
-  margin: 2em;
+  /* margin: 2em; */
 }
 
 body .feedback {
   min-height: 100%;
 }
 
-/* Start of nav rules*/
-/* add background color to the top nav*/
-header {
-  background-color: #c5bf9c;
-  padding: 1em;
-  width: 100%;
-}
+/*
+nav {
+    background-color: #c5bf9c; 
+    padding: 8em;
+    width: 100%;
+ }*/
 
-.header {
-  padding-bottom: 10px;
-  height: 116px;
-  padding-top: 20px;
+nav {
+  padding-bottom: 5px;
+  /*height: 60px; */
+  padding-top: 0px;
 }
 
 .logo {
@@ -47,18 +45,22 @@ header {
 .nav {
   display: flex;
   justify-content: space-between;
+  /*flex-direction: row; */
+  background-color: #5E5652;
 }
 
 .nav-link {
-  color: #573c13;
+  color: #FEFFF1;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-table;
-  margin: 0 1em;
-  padding-top: 25px;
+  margin: 0 4.5em;
+  padding-top: 20px;
   font-size: 1em;
   font-weight: bold;
 }
+
+
 /* below is the nav bar design*/
 .nav .nav-bar a:last-child {
   padding-right: 0;
@@ -66,6 +68,7 @@ header {
 
 .nav .nav-bar a:hover {
   color: #7c272773;
+  background-image: url("../images/bannerImage1.JPG");
 }
 .nav a::before {
   content: "";
@@ -84,17 +87,30 @@ header {
 /* Nav rules end*/
 /* banner ruling starts here*/
 /*editing of the banner image*/
+
+/*
 .index-banner {
   width: 100%;
   height: 50vh;
   padding: 0.05vh;
-  background-image: url("../images/bannerImage1.JPG");
-  opacity: 0.4;
+  background-image: url("../images/Logo_trans.png");
+  opacity: 10;
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
   position: relative;
   top: 10px;
+} */
+
+
+.banner {
+  width: 100%;
+  height: 250px;
+  background-image: url(../images/Logo_trans.png);
+  opacity: 10;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 
 .faqp-banner {
@@ -152,13 +168,12 @@ header {
   font-size: 30px;
   color: #41332e;
 }
-
 /* banner section ruling ends here*/
+
 section {
-  /* all SECTIONS within the page, the rule below will apply to it*/
-  background: rgb(185, 182, 171);
-  color: #41332e;
-  padding: 60px;
+    /* background: rgb(185, 182, 171); */
+    color: #41332e;
+    padding: 5px;
 }
 
 .content .index-banner .heading h1 {
@@ -184,18 +199,6 @@ footer {
 .footer-links li a {
   color: #573c13;
   margin: 0 1em;
-}
-
-/* banner rules starts here */
-.banner {
-  width: 100%;
-  height: 650px;
-  background-image: url("../images/bannerImage1.JPG");
-  opacity: 0.7;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
 }
 
 .hero-text {
