@@ -8,136 +8,86 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600"
       rel="stylesheet"
-      type="text/css"
-    />
+      type="text/css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
   </head>
 
   <body>
-    <header class="header">
+    <header >
+      <div class="hero-image" alt="girl with faux locs staring at you"> </div>
+      <div class="banner"></div>
+    </header>
+    <nav class="header">
       <ul class="nav">
-        <div class="logo">
-          <a href="#index.html">
-            <img src="images/Kalimakes_Logo-removebg-preview.png" alt="Brand logo" class="logo-image" />
-          </a>
-        </div>
-        
         <div class="nav-bar">
-          <a href="#home" class="nav-link">
-            <li>Home</li>
-          </a>
-          <a href="#Styles" class="nav-link">
-            <li>Styles</li>
-          </a>
-          <a href="https://calendly.com/kalikrown-bookings" class="nav-link">
-            <li>Booking</li>
-          </a>
-          <a href="faq_policy.html" class="nav-link">
-            <li>FAQ & Policy</li>
-          </a>
-          <a href="feedback.html" class="nav-link" target="_blank">
-            <li>Feedback Form</li>
-          </a>
-          <a href="#contact" class="nav-link">
-            <li>Contact</li>
-          </a>
+          <li> <!--Home navbar-->
+          <a href="index.html" class="nav-link active" aria-label="Go to KaliKrown's home page (this is the current page)">Home</a>
+          </li>
+          <li class="dropdown"> <!--Hairstyle navbar-->
+            <a href="index.html" target="_blank" class="nav-link dropbtn" aria-label="Go to our haistyle page"> Our Hairstyles</a>
+            <div class="dropdown-content">
+              <a href="hairstyle_booking.html"target="_blank" >Knotless/Braids/Twists</a>
+              <a href="hairstyle_booking.html"target="_blank">Fauxlocs</a>
+              <a href="hairstyle_booking.html"target="_blank">Sleek ponytails</a>
+            </div>
+          </li>
+
+          <li class="dropdown"> <!--Policy and FAQs navbar-->
+            <a href="faq_policy.html" class="nav-link dropbtn" aria-label="got to out POlicy and FAQs page">Policy and FAQs </a>
+            <div class="dropdown-content">
+              <a href="faq_policy.html" target="_blank">Policy</a>
+                <a href="faq_policy.html" target="_blank">FAQs</a>
+            </div> 
+          </li> 
+          <li> <!--Feedback navbar-->
+            <a href="feedback.html" class="nav-link" target="_blank" aria-label="Go to fill in you feedback on our services">Feedback Form</a>
+          </li>
         </div>
       </ul>
-    </header>
-    <!--banner starts here -->
-    <section class="banner index-banner">
-      <div class="hero-text">
-        <h1 style="font-size: 50px" id="home">Welcome to KaliKrown</h1>
-        <p>Book your appointment today!</p>
-        <a href="https://calendly.com/kalikrown-bookings"> <button>BOOK</button> </a>
-      </div>
-    </section>
-    <!--hairstyle section starts here-->
-    <section>
-      <h2 id="Styles">Hairstyles</h2>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <img
-              src="images/knotlessBraids-collage.jpg"
-              alt="collage collection of girls with knotlessBraids"
-              style="width: 100%"
-            />
-            <div class="container">
-              <h4>Knotless Braids</h4>
-              <p class="title">Large, bra-strap length:£75</p>
-              <p>
-                Please ensure you have read our FAQs and Policies before booking
-              </p>
-              <a href="#Book Appointments">
-                <a href="https://calendly.com/kalikrown-bookings/knotless-braids-appointment-clone"> <button class="button">Book Now</button></a>
-                <p> <a href="#home">Click </a> to return to the top of the page.</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="images/FauxLocs-collage.jpg"
-              alt="collage collection of girls with FauxLocs"
-              style="width: 100%"
-            />
-            <div class="container">
-              <h4>FauxLocs</h4>
-              <p class="title">Large, bra-strap length:£75</p>
-              <p>
-                Please ensure you have read our FAQs and Policies before booking
-              </p>
-              <a href="#Book Appointments">
-                <a href="https://calendly.com/kalikrown-bookings/fauxlocs-appointment"> <button class="button">Book Now</button></a>
-              </a>
-              <p> <a href="#home">Click </a> to return to the top of the page.</p>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img
-              src="images/TwistBraids-collage.jpg"
-              alt="collage collection of girls with TwistBraids"
-              style="width: 100%"
-            />
-            <div class="container">
-              <h4>Twist Braids</h4>
-              <p class="title">Large, bra-strap length:£75</p>
-              <p>
-                Please ensure you have read our FAQs and Policies before booking
-              </p>
-              <a href="#Book Appointments">
-              <a href=" https://calendly.com/kalikrown-bookings/knotless-braids-appointment"><button class="button">Book Now</button> </a> 
-              </a>
-              <p> <a href="#home">Click </a> to return to the top of the page.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Hairstyle section ends here -->
-    <!--Need to sort Calendly out-->
-    
-    <!-- this is the start of the feed back section-->
-    
+    </nav> 
+  </ul>
 
+
+   
+  <section>  <!--hairstyle section starts here-->
+    <h2 id="Styles">Our Hairstyles</h2>
+      <p>Our most popular stlyes, FauxLocs, Braids and Twists!! Select on your preferred style to make a booking and see more beautiful client pictures</p>
+        
+        <a href="hairstyle_booking.html" aria-label="click to go to our hairstyle page" target="_blank">
+          <img
+          src="images/twists braids.JPG"
+          alt="knotless braids image"/>
+        </a>
+        <div class="desc">Add a description of the image here</div>
+
+        <a href="hairstyle_booking.html" aria-label="click to go to our hairstyle page" target="_blank">
+          <img
+          src="images/FauxLocs.JPG"
+          alt="girl with butterfly long locs"/>
+        </a>
+        <div class="desc">Add a description of the image here</div>
+
+        <a href="hairstyle_booking.html" aria-label="click to go to our hairstyle page" target="_blank">
+          <img
+          src="images/knotlessBraids.JPG"
+          alt="girls with knotless braids"/>  
+        </a>
+        <div class="desc">Add a description of the image here</div>
+  </section>
+
+
+
+    <!-- feedback section below-->
     <section class="contact">
-      <div class="col-lg-3 item social">
       <h2 id="contact"> Contact Us</h2>
       <p> For any queries, please don't hesitate to reach out to us via our <a href="https://www.instagram.com/kalikrown/"><i class="icon ion-social-instagram"></i>instagram</a> page.</p>
 
@@ -160,7 +110,6 @@
         <li><a href="feedback.html" target="_blank">Feedback</a></li>
         <!-- need to create the section-->
         <li><a href="faq_policy.html" target="_blank >FAQ & Policy</a></li>
-        <li><a href="#Contact">Contact Us</a></li>
       </ul>
       <p class="copyright">KaliKrown &copy; 2021</p>
     </footer>
