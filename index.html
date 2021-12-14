@@ -22,81 +22,85 @@
   </head>
 
   <body>
-    <header >
-      <div class="hero-image" alt="girl with faux locs staring at you"> </div>
-      <div class="banner"></div>
+    <header>
+      <nav class="header">
+        <ul class="nav">
+          <div class="nav-bar" id="navbar">
+            <li> <!--Home navbar-->
+            <a href="index.html" class="nav-link active" aria-label="Go to KaliKrown's home page (this is the current page)">Home</a>
+            </li>
+            
+            <li> <!--Hairstyle navbar-->
+              <a href="hairstyle_booking.html" target="_blank" class="nav-link dropbtn" aria-label="Go to our haistyle page"> Our Hairstyles</a>
+            </li>
+
+            <li> <!--Policy and FAQs navbar-->
+              <a href="faq_policy.html" class="nav-link dropbtn" aria-label="got to out POlicy and FAQs page">Policy & FAQs </a>
+            
+            </li> 
+            <li> <!--Feedback navbar-->
+              <a href="feedback.html" class="nav-link" target="_blank" aria-label="Go to fill in you feedback on our services">Feedback Form</a>
+            </li>
+          </div>
+        </ul>
+      </nav> 
+    
+      <div>
+        <div class="hero-image" alt="girl with faux locs staring at you"> </div>
+          <div class="banner">
+          </div>
+      </div>
     </header>
-    <nav class="header">
-      <ul class="nav">
-        <div class="nav-bar">
-          <li> <!--Home navbar-->
-          <a href="index.html" class="nav-link active" aria-label="Go to KaliKrown's home page (this is the current page)">Home</a>
-          </li>
-          <li class="dropdown"> <!--Hairstyle navbar-->
-            <a href="index.html" target="_blank" class="nav-link dropbtn" aria-label="Go to our haistyle page"> Our Hairstyles</a>
-            <div class="dropdown-content">
-              <a href="hairstyle_booking.html"target="_blank" >Knotless/Braids/Twists</a>
-              <a href="hairstyle_booking.html"target="_blank">Fauxlocs</a>
-              <a href="hairstyle_booking.html"target="_blank">Sleek ponytails</a>
-            </div>
-          </li>
-
-          <li class="dropdown"> <!--Policy and FAQs navbar-->
-            <a href="faq_policy.html" class="nav-link dropbtn" aria-label="got to out POlicy and FAQs page">Policy and FAQs </a>
-            <div class="dropdown-content">
-              <a href="faq_policy.html" target="_blank">Policy</a>
-                <a href="faq_policy.html" target="_blank">FAQs</a>
-            </div> 
-          </li> 
-          <li> <!--Feedback navbar-->
-            <a href="feedback.html" class="nav-link" target="_blank" aria-label="Go to fill in you feedback on our services">Feedback Form</a>
-          </li>
-        </div>
-      </ul>
-    </nav> 
-  </ul>
-
-
    
   <section>  <!--hairstyle section starts here-->
-    <h2 id="Styles">Our Hairstyles</h2>
-      <p>Our most popular stlyes, FauxLocs, Braids and Twists!! Select on your preferred style to make a booking and see more beautiful client pictures</p>
-        
-        <a href="hairstyle_booking.html" aria-label="click to go to our hairstyle page" target="_blank">
-          <img
-          src="images/twists braids.JPG"
-          alt="knotless braids image"/>
-        </a>
-        <div class="desc">Add a description of the image here</div>
+    <h2 id="HairStyles">Our Hairstyles</h2>
+      <p>Our most popular stlyes, Faux Locs, Braids and Twists. <br> Click on your desired style to make a booking or to see more of our beautiful client pictures</p>
+      
+      <div class="responsive"> <!--twists-->
+        <div class="gallery"> 
+              <a href="hairstyle_booking.html" aria-label="click to go to our hairstyle page" target="_blank">
+                <img src="images/twists braids.JPG"
+                alt="knotless braids image"/>
+              </a>
+        </div>
+      </div>
 
-        <a href="hairstyle_booking.html" aria-label="click to go to our hairstyle page" target="_blank">
-          <img
-          src="images/FauxLocs.JPG"
-          alt="girl with butterfly long locs"/>
-        </a>
-        <div class="desc">Add a description of the image here</div>
-
-        <a href="hairstyle_booking.html" aria-label="click to go to our hairstyle page" target="_blank">
-          <img
-          src="images/knotlessBraids.JPG"
-          alt="girls with knotless braids"/>  
-        </a>
-        <div class="desc">Add a description of the image here</div>
+     
+      <div class="responsive"> <!--butterflylocs-->
+        <div class="gallery"> 
+            <a href="hairstyle_booking.html" aria-label="click to go to our hairstyle page" target="_blank">
+              <img src="images/FauxLocs.JPG"
+              alt="girl with butterfly long locs"/>
+            </a>
+        </div>
+      </div>
+      <div class="responsive"> <!--knotlessbraids-->
+        <div class="gallery"> 
+              <a href="hairstyle_booking.html" aria-label="click to go to our hairstyle page" target="_blank">
+                <img
+                src="images/knotlessBraids.JPG"
+                alt="girls with knotless braids"/>  
+              </a>
+        </div>
+      </div>
+        <br>
   </section>
 
+  <br>
 
+  <section class="contact"> <!-- feedback section below-->
+    <div>
+        <h2 id="contact">Contact Us </h2>
+          <p> For any queries, please don't hesitate to reach out to us via our 
+            <a href="https://www.instagram.com/kalikrown/">
+              <i class="icon ion-social-instagram"></i>instagram
+            </a>page.
+          </p> 
+          <p> <a href="index.html">Click </a> to return to the top of the page.</p>
+    </div>      
+  </section>
 
-    <!-- feedback section below-->
-    <section class="contact">
-      <h2 id="contact"> Contact Us</h2>
-      <p> For any queries, please don't hesitate to reach out to us via our <a href="https://www.instagram.com/kalikrown/"><i class="icon ion-social-instagram"></i>instagram</a> page.</p>
-
-      <div> 
-        <p> <a href="#home">Click </a> to return to the top of the page.</p>
-      </div>
-    </div>
 <br>
-
 
     <footer>
       <!-- <div class="social">
@@ -104,14 +108,12 @@
       </div> -->
 
       <ul class="footer-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="Styles">Styles</a></li>
-        <li><a href="calendly.com/kalikrown-bookin" target="_blank">Book Appointments</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#Styles">Our Hairstyles</a></li>
         <li><a href="feedback.html" target="_blank">Feedback</a></li>
-        <!-- need to create the section-->
         <li><a href="faq_policy.html" target="_blank >FAQ & Policy</a></li>
       </ul>
-      <p class="copyright">KaliKrown &copy; 2021</p>
+      <p class="copyright"> KaliKrown &copy; 2021</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>

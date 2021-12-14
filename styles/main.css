@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -8,38 +7,40 @@
 body {
   /* background: ivory; */
   /*color: antiquewhite; */
-  font-family: Roboto, Arial, sans-serif;
-  /* margin: 2em; */
+  font-family: Roboto, Arial, Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 body .feedback {
   min-height: 100%;
 }
 
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #573c13;
 }
 
 nav {
   /*background-color: #c5bf9c; 
   padding: 8em; */
   width: 100%;
-  padding-bottom: 5px;
+  /*padding-bottom: 5px;*/
   /*height: 60px; */
   padding-top: 0px;
+  position: fixed;
 }
 
 /*background-color: #c5bf9c; */
-    /* padding: 8em; */
+    /* padding: 8em; 
     width: 100%;
     padding-bottom: 10px;
     height: 100px;
     padding-top: 0px;
-}
+}*/
 
 .nav {
   display: flex;
@@ -83,30 +84,6 @@ li.dropdown {
   /* padding-top: 20px; */
   font-size: 1em;
   font-weight: bold;
-}
-
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 
@@ -205,7 +182,6 @@ editing of the banner image*/
   color: #89c980;
   font-weight: bold;
 }
-
 .index-banner .sub-heading p {
   border-style: solid;
   border-width: thick;
@@ -214,8 +190,6 @@ editing of the banner image*/
   height: 225px;
   padding-right: 10px;
 }
-
-
 .index-banner p {
   font-size: 30px;
   color: #41332e;
@@ -225,7 +199,11 @@ editing of the banner image*/
 section {
     /* background: rgb(185, 182, 171); */
     color: #41332e;
-    padding: 5px;
+    padding: 50px;
+}
+
+section .contact{
+  padding: 50px;
 }
 
 
@@ -238,20 +216,22 @@ section {
 
 
 footer {
-  background: #c5bf9c;
-  padding: 30px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #573c13;
+  color: white;
+  text-align: center;
 }
 
 .footer-links {
   display: flex;
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
 }
 
 .footer-links li a {
-  color: #573c13;
+  /*color: #573c13; */
   margin: 0 1em;
 }
 
@@ -369,7 +349,6 @@ table {
   font-size: 16px;
   color: #fff;
   cursor: pointer;
-
   border: 2px solid red;
 }*/
 
@@ -391,11 +370,10 @@ the style ruling starts here */
 }
 
 img{
-  50% 50% no-repeat;
+  background: 50% 50% no-repeat;
   width: 300px;
   height: 300px;
 }
-
 
 .container {
   padding: 1em;
@@ -432,15 +410,30 @@ img{
   background-color: #555;
 }
 
-div .index-styles {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-div .index-styles {
+div.gallery:hover {
   border: 1px solid #777;
 }
+
+div.gallery img {
+  width: 100%;
+  height: fit-content;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
 
 .contact .item.social > a {
   font-size: 24px;
@@ -461,7 +454,7 @@ div .index-styles {
   opacity: 0.9;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .column {
     width: 100%;
     display: block;
@@ -469,9 +462,17 @@ div .index-styles {
   .nav-link {
     font-size: 1em;
   }
+  header a  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .banner{
+    background-image: -webkit-image-set();
+  }
 }
 
-@media (min-width: 568px) {
+@media screen and (min-width: 568px) {
   th,
   td {
     word-break: keep-all;
