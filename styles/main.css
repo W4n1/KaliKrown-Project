@@ -5,8 +5,6 @@
 }
 
 body {
-  /* background: ivory; */
-  /*color: antiquewhite; */
   font-family: Roboto, Arial, Arial, Helvetica, sans-serif;
   margin: 0;
 }
@@ -21,32 +19,20 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #573c13;
+  background-color: #white;
 }
 
 nav {
-  /*background-color: #c5bf9c; 
-  padding: 8em; */
   width: 100%;
-  /*padding-bottom: 5px;*/
-  /*height: 60px; */
   padding-top: 0px;
   position: fixed;
 }
 
-/*background-color: #c5bf9c; */
-    /* padding: 8em; 
-    width: 100%;
-    padding-bottom: 10px;
-    height: 100px;
-    padding-top: 0px;
-}*/
 
 .nav {
   display: flex;
   justify-content: space-between;
-  /*flex-direction: row; */
-  background-color: #5E5652;
+  background-color: black;
 }
 
 .nav .nav-bar .activ {
@@ -67,7 +53,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: white;
 }
 
 li.dropdown {
@@ -76,12 +62,10 @@ li.dropdown {
 
 
 .nav-link {
-  color: #FEFFF1;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-table;
-  /* margin: 0 4.5em; */
-  /* padding-top: 20px; */
   font-size: 1em;
   font-weight: bold;
 }
@@ -93,13 +77,13 @@ li.dropdown {
 }
 
 .nav .nav-bar a:hover {
-  color: #7c272773;
+  color: black;
 }
 .nav a::before {
   content: "";
   display: block;
   height: 1px;
-  background-color: #8a2f0ee8;
+  background-color: #b98978e8;
   position: absolute;
   top: 0;
   width: 0%;
@@ -197,9 +181,11 @@ editing of the banner image*/
 /* banner section ruling ends here*/
 
 section {
-    /* background: rgb(185, 182, 171); */
-    color: #41332e;
-    padding: 50px;
+  color: black;
+  padding: 20px;
+  width: 100%;
+  height: 500px;
+}
 }
 
 section .contact{
@@ -216,11 +202,10 @@ section .contact{
 
 
 footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #573c13;
+  background-color: black;
   color: white;
   text-align: center;
 }
@@ -244,16 +229,17 @@ form,
 input,
 p {
   outline: none;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 14px;
-  color: #666;
-  line-height: 22px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 20px;
+    color: #666;
+    line-height: 22px;
 }
 
 h2 {
   font-weight: bold;
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 h3 {
@@ -371,7 +357,6 @@ the style ruling starts here */
 
 img{
   background: 50% 50% no-repeat;
-  width: 300px;
   height: 300px;
 }
 
@@ -416,7 +401,6 @@ div.gallery:hover {
 
 div.gallery img {
   width: 100%;
-  height: fit-content;
 }
 
 div.desc {
@@ -424,15 +408,11 @@ div.desc {
   text-align: center;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .responsive {
-  padding: 0 6px;
+  padding: 30px 30px 30px;
   float: left;
-  width: 24.99999%;
-}
+  width: 30%;
+  margin-right: 25px;
 
 
 .contact .item.social > a {
