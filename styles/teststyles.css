@@ -5,8 +5,10 @@
   font-family: sans-serif, Lora;
 }
 
+
+
 .navbar{
-  background-color: #fcfbfa;
+  background-color: #dfdde0;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -32,16 +34,16 @@
   background-color: black;
   background-image: linear-gradient(to top, #3c2002 0%, #eff0f6 100%);
   background: size 100%;
-  -webkit-background-clip: text;
+  -webkit-background-clip:text;
   background-clip: text;
   -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color:transparent;
+  -moz-text-fill-color:transparent;
   display: flex;
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .fa-gem{
@@ -60,7 +62,7 @@
 }
 
 .navbar_links {
-  color: black;
+  color: #847364;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,13 +238,12 @@ div.main_content{
   font-size: 10rem;
   font-family: Lucida Bright,Georgia,serif; 
   background-color: white;
-  background-image: linear-gradient(to top, #3c2002 0%, #eff0f6 100%);;
+  background-image: linear-gradient(to top, #3c2002 0%, #eff0f6 100%);
   background-size: 100%;
-  -webkit-background-clip: text;
+  -webkit-background-clip:text;
   background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color : transparent;
+  -moz-text-fill-color:transparent;
   text-align: center;
   margin-top: -190px;
 }
@@ -250,31 +251,13 @@ div.main_content{
 .main_content h2 {
   background-image: linear-gradient(to top, #3c2002 0%, #eff0f6 100%);
   background-size: 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
   margin-bottom: 0%;
-}
-
-.main_content p{
-  margin-top: 1rem;
-  font-size: 2.5rem;
-  font-weight: 1300;
-  top: 50%;
-  left: 50%;
-  transform: translate(40%, -50%);
-  /* margin-top: 0%; */
-  margin-left: -250%;
-  margin-right: 16%;
-  color: lightblue;
 }
 
 
 .main_btn{
   font-size: 1rem;
-  background-image: linear-gradient(to top,to top, #3c2002 0%, #eff0f6 100%);
+  background-color: #D8E4E7;
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
@@ -287,10 +270,12 @@ div.main_content{
 
 
 .main_btn a{
-  position:relative;
-  z-index: 2;
-  color: lightblue;
-  text-decoration: none;
+  position: relative;
+    z-index: 2;
+    color: lightblue;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .main_btn::after{
@@ -300,7 +285,7 @@ div.main_content{
   left: 0;
   width: 0;
   height: 100%;
-  background:#3e8fbe;
+  background: #7c6c5a;
   transition: all 0.35s;
   border-radius: 4px;
 }
@@ -348,35 +333,209 @@ div.main_content{
     margin-top:2rem;
   }
   .main_content h2{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-style: italic;
   }
 
-  .main_content p{
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-
-  }
 }
 
 @media screen and (max-width:480px){
   .main_content h1{
-    font-size: 2.5rem;
-    
-  
+    font-size: 5rem; 
+    margin-top: -260px;
   }
+    
   .main_content h2{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-style: italic;
   }
 
-  .main_content p{
-    font-size: 1rem;
-    margin-top: 1.5rem;
-  }
-
   .main_btn{
-    padding: 5px 15px;
-    margin: 0.5rem 0; 
+    padding: 15px 25px;
+    margin: -5rem 0.5rem;
+  }
+  
+  #main_img{
+    margin-top: -200px;
   }
 }
+
+
+/* Hairstyle section*/
+.hairstyle {
+  background: #d4d1ce;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 130vh;
+  margin-top: 112vh;
+
+  z-index: 100;
+}
+
+.hairstyle h1{
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+    font-size: 6rem;
+    background-color: #ffffff;
+    background-size: 100%;
+}
+
+.hairstyle p{
+  background-size: 100%;
+  margin-bottom: 0%;
+  margin-top: -1rem;
+  font-size: 45px;
+  color: #3c2002;
+  font-weight: 500;
+}
+
+.hairstyl_container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hairstyle_card{
+  margin: 1rem;
+  height: 450px;
+  border-radius: 4px;
+  background-image: url(/images/FauxLocs-collage.jpg);
+  background-size: cover;
+  position: relative;
+  float: left;
+  width: 390px;
+  padding: 5px;
+  border-style: solid;
+  border-color: #3c2002;
+  
+}
+
+.hairstyle_card:nth-child(2){
+  background-image:url('/images/knotlessBraids-collage.jpg');
+}
+
+.hairstyle_card:nth-child(3){
+  background-image:url('/images/TwistBraids-collage.jpg');
+}
+
+.hairstyle_card summary {
+  position: absolute;
+    top: 450px;
+    font-size: 2.5rem;
+}
+
+.hairstyle_card:hover{ /*hover zoom in and out effect*/
+  transform:scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+/* Media query for Hairstyle section */
+@media screen and (max-width: 960px){ 
+  .hairstyle{
+    height: 100vh;
+    margin-top: 122vh;
+    margin-bottom: 110vh;
+  }
+
+  .hairstyle h1{
+    font-size: 3rem;
+    margin: 1rem;
+
+  }
+  .hairstyle p {
+    font-size: 1.35rem;
+    font-style: italic;
+    
+  }
+}
+
+
+@media screen and (max-width:480px){ /*smaller screen*/
+  .hairstyle{
+    margin-top: 122vh;
+    margin-bottom: 100vh;
+    height: 195vh;
+    }
+
+  .hairstyle h1{
+    font-size: 3.5rem;
+
+  }
+  .hairstyle_card{
+    width: 430px;
+    height: 25vh;
+  }
+  .hairstyle_card summary{
+    top: 135px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+/*footer CSS*/ 
+.footer_containter{
+  background-color: #3c2002;
+  padding: 1rem 0;
+    /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer_logo{
+  background-color: black;
+  background-image: linear-gradient(to top, #3c2002 0%, #eff0f6 100%);
+  background: size 100%;
+  -webkit-background-clip:text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  -moz-text-fill-color:transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.footer_links{
+ width: 100%;
+ max-width: 1000px;
+ display: flex;
+ justify-content: center;
+}
+
+.footer_link--wrapper{
+  display: flex;
+}
+
+.footer_link-items{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+  }
+
+.footer_link-items h2{
+  margin-bottom: 16px;
+ }
+
+ .footer_link-items > h2 {
+   color: #fff;
+ }
+
+ .footer_link-item a{
+   color: #fff;
+   text-decoration: none;
+   margin-bottom: 0.5rem;
+ }
+
