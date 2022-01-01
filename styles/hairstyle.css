@@ -1,0 +1,182 @@
+/*Hairstyle Section*/ 
+
+
+.hairstyle{
+  display: flex;
+  background-color: #edeaea
+}
+
+/* ruling to the three images with the boxes*/
+
+.row {
+    margin: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%);
+    width: 360px;
+    background-color: #fff;
+  }
+
+  .card h3{
+      text-align: center;
+      align-items: center;
+      font-size: 40px;
+      height: 10px;
+  }
+
+  .column {
+    /*float: left;*/
+    width: 33.3%;
+    margin-bottom: 5px;
+    padding: 0 8px;
+  }
+
+  div .card img{
+      height: 400px;
+      width: 350px;
+  }
+
+  div .card:hover{ /*hover zoom in and out effect*/
+    transform:scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+  .container {
+    padding: 10px;
+    width: 332px;
+
+  }
+
+  .container::after,.row::after {   /* I dont remember what this does*/
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .container summary {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+
+ /*---------------------------------ruling from YOUTUBE HELP---------------------------------------------- {
+    .hairstyle {
+        background: #d4d1ce;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 130vh;
+        margin-top: 112vh;
+    
+        z-index: 100;
+    }
+    
+    .hairstyle h1{
+        -webkit-background-clip: text;
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        margin-bottom: 1.5rem;
+        font-size: 6rem;
+        background-color: #ffffff;
+        background-size: 100%;
+    }
+    
+    .hairstyle p{
+        background-size: 100%;
+        margin-bottom: 0%;
+        margin-top: -1rem;
+        font-size: 45px;
+        color: #3c2002;
+        font-weight: 500;
+    }
+    
+    .hairstyl_container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .hairstyle_card{
+        margin: 1rem;
+        height: 450px;
+        border-radius: 4px;
+        background-image: url(/images/FauxLocs-collage.jpg);
+        background-size: cover;
+        position: relative;
+        float: left;
+        width: 390px;
+        padding: 5px;
+        border-style: solid;
+        border-color: #3c2002;
+        
+    }
+    
+    .hairstyle_card:nth-child(2){
+        background-image:url('/images/knotlessBraids-collage.jpg');
+    }
+    
+    .hairstyle_card:nth-child(3){
+        background-image:url('/images/TwistBraids-collage.jpg');
+    }
+    
+    .hairstyle_card summary {
+        position: absolute;
+        top: 450px;
+        font-size: 2.5rem;
+    }
+    
+    .hairstyle_card:hover{ 
+        /*hover zoom in and out effect*/
+        /*transform:scale(1.075);
+        transition: 0.2s ease-in;
+        cursor: pointer;
+    } */
+    
+    /* Media query for Hairstyle section */
+    @media screen and (max-width: 960px){ 
+        /*.hairstyle{
+        height: 100vh;
+        margin-top: 122vh;
+        margin-bottom: 110vh;
+        }
+    
+        .hairstyle h1{
+        font-size: 3rem;
+        margin: 1rem;
+    
+        }
+        .hairstyle p {
+        font-size: 1.35rem;
+        font-style: italic;
+        
+        }
+    }
+    
+    
+    @media screen and (max-width:480px){ /*smaller screen*/
+       /* .hairstyle{
+        margin-top: 122vh;
+        margin-bottom: 100vh;
+        height: 195vh;
+        }
+    
+        .hairstyle h1{
+        font-size: 3.5rem;
+    
+        }
+        .hairstyle_card{
+        width: 430px;
+        height: 25vh;
+        }
+        .hairstyle_card summary{
+        top: 135px;
+        font-weight: bold;
+        color: #fff;
+        }
+    }
+}
+*/
+
+    }

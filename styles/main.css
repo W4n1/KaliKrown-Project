@@ -6,7 +6,7 @@
   font-family: Roboto, Arial, Arial, Helvetica, sans-serif;
 }
 
-section{
+/*section{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,8 @@ section{
   max-width:100vw;
   overflow:auto;
   color: black; 
-}
+  height: 100vh;
+}*/
 
 .one{
   background: white;
@@ -193,9 +194,7 @@ editing of the banner image*/
 }
 /* banner section ruling ends here*/
 
-section{
-  height: 100vh;
-}
+
 
 
 .box{
@@ -360,12 +359,7 @@ table {
 /* feedback ruling ends here
 the style ruling starts here */
 
-.column {
-  /*float: left;*/
-  /*width: 33.3%;*/
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
+
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -380,12 +374,7 @@ img{
   padding: 1em;
 }
 
-.container::after,
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 
 .title {
   color:#938B86;
