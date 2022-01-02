@@ -3,9 +3,14 @@
 
 .hairstyle{
   display: flex;
-  background-color: #edeaea
-}
+  background-color: #edeaea;
+  flex-direction: column;
+  align-items: center;
+  height: 130vh;
+  margin-top: 112vh;
 
+  z-index: 100;
+}
 /* ruling to the three images with the boxes*/
 
 .row {
@@ -41,10 +46,11 @@
     transform:scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
-}
+  }
+
   .container {
-    padding: 10px;
-    width: 332px;
+    padding: 5px;
+    width: 366px;
 
   }
 
@@ -52,12 +58,15 @@
       content: "";
       clear: both;
       display: table;
-    }
-    .container summary {
+  }
+
+  .container summary {
         margin-top: 5px;
         font-size: 15px;
-    }
+  }
 
+
+  
 
  /*---------------------------------ruling from YOUTUBE HELP---------------------------------------------- {
     .hairstyle {
