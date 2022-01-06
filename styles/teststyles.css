@@ -5,10 +5,8 @@
   font-family: sans-serif, Lora, Roboto, Arial, Arial, Helvetica, sans-serif;
 }
 
-
-
 .navbar{
-  background-color: #dfdde0;
+  background-color: #67adcdbf;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -62,13 +60,14 @@
 }
 
 .navbar_links {
-  color: #847364;
+  color: rgb(71 21 21 / 53%);
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  font-weight: bold;
 }
 
 .navbar_btn{
@@ -106,7 +105,81 @@
   transition: all 0.4s ease;
 }
 
-@media screen and (max-width:960px) {/* classes to be triggered once device meets 960px*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, Lora, Roboto, Arial, Arial, Helvetica, sans-serif;
+}
+
+
+.navbar_container{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#navbar_logo{
+  background-color: black;
+  background-image: linear-gradient(to top, #3c2002 0%, #eff0f6 100%);
+  background: size 100%;
+  -webkit-background-clip:text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  -moz-text-fill-color:transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.fa-gem{  /* for the krown on the nav logo*/
+  margin-right: 0.5rem;
+}
+
+.navbar_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0.5rem;
+  width: 139px;
+}
+
+.button{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    /* width: 100%; */
+    /* border: none; */
+    outline: none;
+    border-radius: 4px;
+    background: #a5a09b;
+    color: white;
+    font-weight: bold;
+    margin: 5px 14px;
+}
+
+.button:hover{
+  background-color: rgb(107, 90, 63);
+  transition: all 0.4s ease;
+}
+
+.navbar_links:hover{
+  color:rgb(78, 56, 20);
+  transition: all 0.4s ease;
+}
+
+@media screen and (max-width:992px) {/* classes to be triggered once device meets 960px for the nav bar */
   .navbar_container{
     display: flex;
     justify-content: space-between;
@@ -136,7 +209,7 @@
     transition: all 0.5s ease;
     z-index: 99;
     height: 50vh;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
 
   #navbar_logo{
@@ -145,14 +218,11 @@
   
   .navbar_toggle .bar{
     width: 25px;
-    height: 3px;
-    margin: 5px auto;
+    height: 1px;
+    margin: 6px auto;
     transition: all 0.3s ease-in-out;
-    background: black;
-  }
-
-  .navbar_item{
-    width: 100%;
+    background: rgb(71, 21, 21);
+    font-weight: bolder;
   }
 
   .navbar_links{
@@ -164,9 +234,9 @@
 
   #mobile-menu{
     position: absolute;
-    top:20%;
+    top: 13%;
     right: 5%;
-    transform: translate(5%, 2%);
+    transform: translate(45%, -3%);
   }
 
   .navbar_btn{
@@ -178,8 +248,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 117px;
-    height: 45px;
+    width: 100px;
+    height: 35px;
     margin: -50%;
   }
 
@@ -188,10 +258,9 @@
     cursor: pointer;
   }
 
-  #mobile-menu.is-active .bar:nth-child(2){  /*ruling targeting the 2nd link of anchor 2nd child for animation that will be created in JS*/ 
+  #mobile-menu.is-active .bar:nth-child(2){  /*ruling targeting the 2nd link of anchor 2nd child for animation  created in JS*/ 
     opacity: 0;
   }
-
   
   #mobile-menu.is-active .bar:nth-child(1){  /*ruling targeting the 1st child for animation that will be created in JS*/ 
     transform: translatey(8px) rotate(45deg);
@@ -202,7 +271,7 @@
   }
 }
 
-/* Hero ruling starts here*/
+/* Hero/main page ruling starts here*/
 
 .main{
   text-align: center;
@@ -225,42 +294,37 @@ div.main_content{
 
 .main_container{
   display: grid;
-  grid-template-columns: 1fr 1fr; /*stretch to the full frame*/
-  align-items: center;
   justify-self: center;
-  height: 90vh;
-  background-color: white;
   z-index: 1;
-  width: 10%;
-  max-width: 1300px;
-  padding: 0 50px;
+
 }
 
 .main_content h1 {
-  font-size: 10rem;
-  font-family: Lucida Bright,Georgia,serif; 
-  background-color: white;
-  background-image: linear-gradient(to top, #3c2002 0%, #eff0f6 100%);
-  background-size: 100%;
-  -webkit-background-clip:text;
-  background-clip: text;
-  -webkit-text-fill-color : transparent;
-  -moz-text-fill-color:transparent;
+  font-size: 11rem;
+  font-family: Lucida Bright,Georgia,serif;
   text-align: center;
-  margin-top: -190px;
+  margin-top: -106px;
+  text-shadow: 2px 2px #3c2002;
+  padding: 0 104px;
 }
 
 .main_content h2 {
   background-image: linear-gradient(to top, #3c2002 0%, #eff0f6 100%);
-  background-size: 100%;
-  margin-bottom: 0%;
-}
+    background-size: 100%;
+    /* margin-bottom: -150%; */
+    font-size: xx-large;
+  }
 
+  .main_content p{
+    font-size: xx-large;
+    font-weight: bolder;
+    text-shadow: 5px 5px rgb(71 21 21);
+  }
 
 .main_btn{
   font-size: 1rem;
-  background-color: #D8E4E7;
-  padding: 14px 32px;
+  background-color: #67adcde0;
+  padding: 10px 21px;
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -268,13 +332,13 @@ div.main_content{
   position: relative;
   transition: all 0.39s;
   outline: none;
+  margin: 20px 20px;
 }
-
 
 .main_btn a{
   position: relative;
     z-index: 2;
-    color: lightblue;
+    color: #fff;
     text-decoration: none;
     font-size: larger;
     font-weight: bolder;
@@ -306,99 +370,49 @@ div.main_content{
 
 #main_img{
   display: grid;
-  min-width: 1000px;
-  width: 100%;
-  height: 100%;
+  width: 1254px;
+  height: 89%;
   object-fit: cover;
-  opacity: 70%;
+  margin-right: 1px;
+  margin-top: 199px;
 }
-
-/*mobile responsive */
-@media screen and(max-width: 768px) {
-  .main_container{
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-self: center;
-    width: 100%;
-    margin: 0 auto;
-    height: 90vh;
-  }
-
-  .main_content{
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-
-  .main_content h1{
-    font-size: 2.5rem;
-    margin-top:2rem;
-  }
-  .main_content h2{
-    font-size: 1.1rem;
-    font-style: italic;
-  }
-
-}
-
-@media screen and (max-width:480px){
-  .main_content h1{
-    font-size: 5rem; 
-    margin-top: -260px;
-  }
-    
-  .main_content h2{
-    font-size: 1.1rem;
-    font-style: italic;
-  }
-
-  .main_btn{
-    padding: 15px 25px;
-    margin: -5rem 0.5rem;
-  }
-  
-  #main_img{
-    margin-top: -200px;
-  }
-}
-
 
 /* Hairstyle section*/
 .hairstyle{
-  background-color: #edeaea;
+  background-color: #bcb3a0;
   flex-direction: column;
   align-items: center;
-  height: 130vh;
-  margin-top: 113vh;
+  height: 154vh;
+  margin-top: 129vh;
   z-index: 1;
 }
 
 .hairstyle h2{
-  font-size: 5rem;
+  font-size: 6.5rem;
   font-weight: bolder;
-  color: black;
+  color: rgb(238 238 236);
   text-align: center;
 }
 
 .hairstyle p{
-  background-size: 100%;
   margin-bottom: 20px;
-  font-size: 25px;
-  color: #3c2002;
-  font-weight: 200;
+  font-size: 30px;
+  color: #eee;
   margin-top: 2rem;
-  margin-left: 350px;
+  margin-left: 301px;
+  font-weight: bold;
+  width: 100%;
 }
 
 /* ruling to the three images with the boxes*/
 .row {
-  margin: 10px;
-  /* margin-top: 160px; */
+  margin: 2px;
+  margin-top: 59px;
   align-items: center;
   display: inline-block;
   font-style: italic;
+  text-shadow: 1px 1px #96a5bf;
 }
-
 
 .card {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%);
@@ -415,14 +429,12 @@ div.main_content{
 
   .column {
     /*float: left;*/
-    width: 33.3%;
-    margin-bottom: 5px;
-    padding: 0 8px;
+    padding: 0 20px;
   }
 
   div .card img{
-      height: 400px;
-      width: 350px;
+    height: 302px;
+    width: 331px
   }
 
   div .card:hover{ /*hover zoom in and out effect*/
@@ -430,16 +442,11 @@ div.main_content{
     transition: 0.2s ease-in;
     cursor: pointer;
   }
+
   .container {
     padding: 10px;
     width: 382px;
     margin-left: 17px;
-  }
-
-  .container::after,.row::after {   /* I dont remember what this does*/
-      content: "";
-      clear: both;
-      display: table;
   }
 
   .container summary {
@@ -459,63 +466,181 @@ div.main_content{
 
   }
 
-/* Media query for Hairstyle section */
-@media screen and (max-width: 960px){ 
-  .hairstyle{
-    height: 100vh;
-    margin-top: 113.5vh;
-    margin-bottom: 110vh;
-  }
+  .hairstyle button {display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-decoration: none; */
+    padding: 10px 23px;
+    /* height: 100%; */
+    /* width: 100%; */
+    border: none;
+    /* outline: none; */
+    border-radius: 12px;
+    background: #67adcd;
+    color: white;
+    /* font-weight: bold; */
+    /* text-decoration: none; */
+    margin: 19px 161px;}
 
+/* Media query for Hairstyle section */
+@media screen and (max-width: 9920px){ 
+  
   .hairstyle h1{
     font-size: 3rem;
     margin: 1rem;
-
   }
+
   .hairstyle p {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     font-style: italic;
     width: 100%;
-    margin-left: 35px;
+    margin-left: 1px;
+    text-align: center;
   }
 
-  .row{
-    display: inline-block;
+  p.title {
+    font-size: 10px;
+    color: #3c2002;
+    margin-top: 1rem;
+    margin-left: 0px;
   }
-    
+
+  .card h3{
+    text-align: center;
+    align-items: center;
+    font-size: 27px;
+    height: 30px;
+  }
 }
 
+@media screen and (max-width:360px){ /*smallest screens*/
 
-@media screen and (max-width:480px){ /*smaller screen*/
-  .hairstyle{
-    margin-top: 122vh;
-    margin-bottom: 100vh;
-    height: 195vh;
-    }
-
-  .hairstyle h1{
-    font-size: 3.5rem;
-
+  #main_img {
+    margin-bottom: 400px;
+    margin-right: 20px;
+    height: 49vh;
+    min-width: 380px;
+    display: grid;
+  width: 1126px;
+  height: 100%;
+  object-fit: cover;
   }
+
+  
+
+  .main_content h1 {
+    font-size: 3rem;
+    margin-top: -200px;
+    padding-right: 77px;
+  }
+  
+  .main_content h2 {
+    font-size: .6rem;
+    margin-bottom: 90px;
+    padding-right: 82px;
+    width: 360px;
+  }
+
+  .main_content p {
+    margin-top: -100px;
+    padding-right: 82px;
+    font-weight: bolder;
+  }
+
+  .main_btn{
+    padding: 5px 12px;
+    font-size: x-small;
+    margin-right: 91px;
+    margin-top: 10px;
+  }
+
+  #navbar_logo {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+  .navbar{
+    height: 40px;
+    display: flex;
+    font-size: .8rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .navbar_container {
+    height: 40px;
+  }
+
+/*----------------------- HAIRSTYLE SMALLEST SCREEN---------------------*/
+  .hairstyle{
+    margin-top: 235px;
+    height: 195vh;
+  }
+
+  .hairstyle h2{
+    font-size: 2rem;
+    padding: 10px;
+    margin: 0 60px;
+    width: 200px;
+  }
+
+  .hairstyle p{
+    font-size: .8rem;
+    margin: 0 12px 0 0;
+  }
+
   .hairstyle_card{
     width: 430px;
     height: 25vh;
   }
+
+  .hairstyle .row .card img{
+    height: 90px;
+    width: 150px;
+  }
+
   .hairstyle_card summary{
     top: 135px;
     font-weight: bold;
     color: #fff;
   }
+  
+  .hairstyle .row{
+    margin: 5px;
+    padding-bottom: 150px;
+  }
+
+  .hairstyle .row h5{
+    margin-left: 5px;
+    font-size: 11.5px;
+  }
+
+  .container{
+    padding: 1px;
+    width: 240px;
+    margin-left: 15px;
+  }
+
+  .container h4{
+    font-size: 12px;
+  }
+
+  .container summary {
+    font-size: 11px;
+    font-weight: 549;
+  }
+
 }
 
 /*footer CSS*/ 
 .footer_containter{
-  background-color: #3c2002;
+  background-color: #7c6c5a;
   padding: 1rem 0;
-    /* display: flex; */
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-top: solid 12px #12a2e494;
 }
 
 #footer_logo{
@@ -549,23 +674,23 @@ div.main_content{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 16px;
+  margin: 35px;
   text-align: left;
-  width: 160px;
+  width: -13px;
   box-sizing: border-box;
+  margin-left: -439px;
   }
 
 .footer_link-items h2{
-  margin-bottom: 16px;
+  margin-bottom: 9px;
  }
 
  .footer_link-items > h2 {
    color: #fff;
  }
 
- .footer_link-item a{
+ .footer_link-item a {
    color: #fff;
    text-decoration: none;
    margin-bottom: 0.5rem;
- }
-
+  }
