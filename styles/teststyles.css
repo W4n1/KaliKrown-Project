@@ -5,6 +5,7 @@
   font-family: sans-serif, Lora, Roboto, Arial, Arial, Helvetica, sans-serif;
 }
 
+
 .navbar{
   background-color: #67adcdbf;
   height: 80px;
@@ -275,12 +276,12 @@
 
 .main{
   text-align: center;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-}
+  }
 
 div.main_content{
   text-align: center;
@@ -326,7 +327,7 @@ div.main_content{
   background-color: #67adcde0;
   padding: 10px 21px;
   border: none;
-  border-radius: 4px;
+  border-radius: 16px;
   color: #fff;
   cursor: pointer;
   position: relative;
@@ -364,17 +365,15 @@ div.main_content{
   width:100%;
 }
 
-.main_img-containter{
-  text-align: center;
-}
+
 
 #main_img{
   display: grid;
-  width: 1254px;
-  height: 89%;
+  max-width: 1227px;
+  height: 1287px;
   object-fit: cover;
-  margin-right: 1px;
-  margin-top: 199px;
+  margin-right: -1px;
+  margin-top: 129px;
 }
 
 /* Hairstyle section*/
@@ -382,7 +381,7 @@ div.main_content{
   background-color: #bcb3a0;
   flex-direction: column;
   align-items: center;
-  height: 154vh;
+  height: 163vh;
   margin-top: 129vh;
   z-index: 1;
 }
@@ -416,8 +415,9 @@ div.main_content{
 
 .card {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%);
-  background-color: #fff;
-  margin-left: 26px;
+    background-color: #fff;
+    margin-right: 71px;
+    max-width: 200px;
   }
 
   .card h3{
@@ -429,7 +429,7 @@ div.main_content{
 
   .column {
     /*float: left;*/
-    padding: 0 20px;
+    padding: 0 2px;
   }
 
   div .card img{
@@ -513,45 +513,313 @@ div.main_content{
   }
 }
 
-@media screen and (max-width:360px){ /*smallest screens*/
+/*small screen laptops*/
+@media screen and (max-width: 769px) {
+  body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  #main_img {
+    margin-bottom: 388px;
+    height: 617px;
+    min-width: 769px;
+    display: grid;
+    max-width: 768px;
+    margin-top: 186px;
+  }
+  
+  .main_content h1 {
+    font-size: 6.5rem;
+    margin-top: -136px;
+  }
+  
+  .main_content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 126px;
+  }
+
+  .main_content p {
+    margin-top: 118px;
+    padding-right: 3px;
+    font-size: 45px;
+  }
+  
+  .main_btn{
+    padding: 10px 21px;
+    margin-top: 3px;
+  }
+
+  #navbar_logo {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+  .navbar{
+    height: 40px;
+    display: flex;
+    font-size: .8rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .navbar_container {
+    height: 40px;
+  }
+  
+  /*----------------------- HAIRSTYLE 769px Small laptop SCREEN---------------------*/
+  .hairstyle{
+    margin-top: -676px;
+    height: 212vh;
+    max-width: 789px;
+  }
+
+  .hairstyle h2{
+    margin: 9px 234px;
+    width: 325px;
+    font-size: 54px;
+  }
+
+  .hairstyle p{
+    font-size: 25px;
+  }
+
+  .hairstyle .card{
+    max-width: 312px;
+    height: 38vh;
+  }
+
+  .hairstyle .row .card img{
+    height: 200px;
+    width: 301px;
+  }
+
+  .hairstyle_card summary{
+    top: 135px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .hairstyle .row{
+    margin: 0 118px;
+    padding-bottom: 22px;
+  }
+
+  .hairstyle .row h5{
+    margin-left: -28px;
+    font-size: 12.5px;
+  }
+
+  .container{
+    padding: 9px;
+    max-width: 310px;
+    margin-left: -50px;
+  }
+
+  .container h4{
+    font-size: 15px;
+  }
+
+  .container summary {
+    font-size: 13px;
+  }
+  
+  .hairstyle button {
+    width: 75px;
+    height: 34px;
+    margin: 11px 52px;
+    border-radius: 23px;
+  }
+
+  .row div p{
+    font-size: 14px;
+    margin-left: -118px;
+    width: 478px;
+  }
+}
+
+/*Ipad screens 481px*/
+@media screen and (max-width:481px) {
+  body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  #main_img {
+    margin-bottom: 473px;
+    /* margin-right: 18px; */
+    height: 56vh;
+    min-width: 484px;
+    display: grid;
+    max-width: 480px;
+    object-fit: cover;
+    margin-top: 186px;
+  }
+  
+  .main_content h1 {
+    font-size: 3.5rem;
+    margin-top: -313px;
+    padding-right: 101px;
+  }
+  
+  .main_content h2 {
+    font-size: .8rem;
+    margin-bottom: 90px;
+  }
+
+  .main_content p {
+    margin-top: 30px;
+    padding-right: 3px;
+    font-weight: bolder;
+  }
+  
+  .main_btn{
+    padding: 5px 13px;
+    font-size: x-small;
+    margin-right: 32px;
+    margin-top: 6px;
+  }
+
+  #navbar_logo {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+  .navbar{
+    height: 40px;
+    display: flex;
+    font-size: .8rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .navbar_container {
+    height: 40px;
+  }
+  
+  /*----------------------- HAIRSTYLE 481px IPAD SCREEN---------------------*/
+  .hairstyle{
+    margin-top: -669px;
+    height: 212vh;
+    max-width: 488px;
+  }
+
+  .hairstyle h2{
+    margin: 0 132px;
+    width: 203px;
+    font-size: 2.5rem;
+  }
+
+  .hairstyle p{
+    font-size: 1.1rem;
+    margin: 2px 12px 23px 0;
+  }
+
+  .hairstyle_card{
+    width: 430px;
+    height: 25vh;
+  }
+
+  .hairstyle .row .card img{
+    height: 170px;
+    width: 195px;
+  }
+
+  .hairstyle_card summary{
+    top: 135px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .hairstyle .row{
+    margin: 0 118px;
+    padding-bottom: 22px;
+  }
+
+  .hairstyle .row h5{
+    margin-left: -28px;
+    font-size: 12.5px;
+  }
+
+  .container{
+    padding: 9px;
+    max-width: 310px;
+    margin-left: -50px;
+  }
+
+  .container h4{
+    font-size: 15px;
+  }
+
+  .container summary {
+    font-size: 13px;
+  }
+  
+  .hairstyle button {
+    width: 75px;
+    height: 34px;
+    margin: 11px 52px;
+    border-radius: 23px;
+  }
+
+  .row div p{
+    font-size: 14px;
+    margin-left: -118px;
+    width: 478px;
+  }
+}
+
+@media screen and (max-width:360px){ /*mobile screens*/
+
+  body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
 
   #main_img {
-    margin-bottom: 400px;
-    margin-right: 20px;
-    height: 49vh;
+    margin-bottom: 475px;
+    /* margin-right: 20px; */
+    height: 56vh;
     min-width: 380px;
     display: grid;
-  width: 1126px;
-  height: 100%;
-  object-fit: cover;
+    max-width: 378px;
+    object-fit: cover;
+    margin-top: 186px;
   }
 
   
 
   .main_content h1 {
-    font-size: 3rem;
-    margin-top: -200px;
-    padding-right: 77px;
+    font-size: 3.5rem;
+    margin-top: -313px;
+    padding-right: 101px;
   }
   
   .main_content h2 {
-    font-size: .6rem;
+    font-size: .8rem;
     margin-bottom: 90px;
-    padding-right: 82px;
-    width: 360px;
   }
 
   .main_content p {
-    margin-top: -100px;
-    padding-right: 82px;
+    margin-top: 30px;
+    padding-right: 3px;
     font-weight: bolder;
   }
 
   .main_btn{
-    padding: 5px 12px;
+    padding: 5px 13px;
     font-size: x-small;
-    margin-right: 91px;
-    margin-top: 10px;
+    margin-right: 32px;
+    margin-top: 6px;
   }
 
   #navbar_logo {
@@ -573,20 +841,21 @@ div.main_content{
 
 /*----------------------- HAIRSTYLE SMALLEST SCREEN---------------------*/
   .hairstyle{
-    margin-top: 235px;
+    margin-top: -669px;
     height: 195vh;
+    max-width: 360px;
   }
 
   .hairstyle h2{
     font-size: 2rem;
     padding: 10px;
-    margin: 0 60px;
+    margin: 0 75px;
     width: 200px;
   }
 
   .hairstyle p{
-    font-size: .8rem;
-    margin: 0 12px 0 0;
+    font-size: .7rem;
+    margin: 2px 12px 23px 0;
   }
 
   .hairstyle_card{
@@ -606,19 +875,19 @@ div.main_content{
   }
   
   .hairstyle .row{
-    margin: 5px;
-    padding-bottom: 150px;
+    margin: 0 78px;
+    padding-bottom: 11px;
   }
 
   .hairstyle .row h5{
-    margin-left: 5px;
-    font-size: 11.5px;
+    margin-left: -28px;
+    font-size: 12.5px;
   }
 
   .container{
-    padding: 1px;
-    width: 240px;
-    margin-left: 15px;
+    padding: 6px;
+    max-width: 240px;
+    margin-left: -5px;
   }
 
   .container h4{
@@ -630,12 +899,25 @@ div.main_content{
     font-weight: 549;
   }
 
+  .hairstyle button {
+    width: 75px;
+    height: 34px;
+    margin: 11px 52px;
+    border-radius: 23px;
+  }
+
 }
+
+@media screen and (max-width: 320px){ /*mobile screens*/
+  .main_content h2 {
+    font-size: .75rem;
+  }
+}
+
 
 /*footer CSS*/ 
 .footer_containter{
   background-color: #7c6c5a;
-  padding: 1rem 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
