@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,42 +11,47 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
   <nav class="navbar"> <!--Navbar section-->
     <div class="navbar_container">
-      <a href="/" id="navbar_logo">Kali<i class="fas fa-crown"></i></a>
+      <a href="/test.html" id="navbar_logo">Kali<i class="fas fa-crown"></i></a>
       <div class="navbar_toggle" id="mobile-menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
 
       </div>
+
       <ul class="navbar_menu"> <!--Navbar and Logo-->
         <li class="navbar_item">
-          <a href="/" class="navbar_links">Home</a>
+          <a href="#home_section" class="navbar_links">Home</a>
         </li>
+
         <li class="navbar_item">
-          <a href="/" class="navbar_links">Hairstyles</a>
+          <a href="#hairstyle_section" class="navbar_links" >Hairstyles</a>
         </li>
-        <!--<li class="navbar_item">
-          <a href="/hairstyle_booking.html" class="navbar_links">Clients Pictures</a>
-        </li>-->
+
+        <li class="navbar_item">
+          <a href="/feedback.html" class="navbar_links" target="_blank">Feedback</a>
+        </li>
   
         <li class="navbar_btn">
-          <a href="/" class="button">BOOK</a>
+          <a href="https://calendly.com/kalikrown-bookings" class="nav_button" target="blank">BOOK</a>
         </li>
         
       </ul>
     </div>
   </nav>
 
-  <div class="main"> <!-- Hero section-->
+  <div class="main" id="home_section"> <!-- Hero section-->
     <div class="main_container">
       <div class="main_content">
         <h1>KaliKrown</h1>
         <h2>Desirable Goddess styles for the prices <em>YOU</em> deserve</h2> <br>
         <p>Book with us today</p>
-        <strong><button class="main_btn"><a href="/">BOOK</a></strong></button>
+        <strong><button class="main_btn"><a href="https://calendly.com/kalikrown-bookings">BOOK</a></strong></button>
         
       </div>
       <div class="main_img-container">
@@ -56,10 +61,9 @@
   </div>
 
    <!-- Hairstyle section-->
-  <div class="hairstyle">
+  <div class="hairstyle" id="hairstyle_section">
       <h2>Our styles</h2>
       <p>Our high on demand styles. Check out our prices below!</p>
-      
         <div class="row "> <!-- Faux-loc section 1-->
           <div class="card">  
             <h3 id="Styles">FauxLocs</h3>
@@ -79,11 +83,11 @@
             <h5>To book with us, please click the button below</h5>
             <!--button to book the style-->
               <a href="https://calendly.com/kalikrown-bookings/fauxlocs-appointment"> 
-                <button class="button">Book</button></a>
+                <button class="button" target="_blank" >Book</button></a>
           </div>
         </div>    
 
-        <div class="row "> <!--knotless braids section 2-->
+        <div class="row "> <!--Knotless braids section 2-->
           <div class="card">  
             <h3 id="Styles">Knotless Braids</h3>
                   <div class="column">
@@ -104,8 +108,8 @@
           <div> <!--the booking button-->
             <h5>To book with us, please click the button below</h5>
             <!--button to book the style-->
-              <a href="https://calendly.com/kalikrown-bookings/fauxlocs-appointment"> 
-                <button class="button">Book</button></a>
+              <a href="https://calendly.com/kalikrown-bookings/knotless-braids-appointment"> 
+                <button class="button" target="_blank" >Book</button></a>
           </div>
         </div>
 
@@ -130,16 +134,13 @@
           <div > <!--the booking button-->
             <h5>To book with us, please click the button below</h5>
             <!--button to book the style-->
-              <a href="https://calendly.com/kalikrown-bookings/fauxlocs-appointment"> 
-                <button class="button">Book</button></a>
-
-                <p>
-                  Please ensure you have read our FAQs and Policies before booking.
-                  <br> <a href="#home">Click </a> to return to the top of the page.</p>
+              <a href="https://calendly.com/kalikrown-bookings/twist-braids-appointment-clone"> 
+                <button class="button" target="_blank" >Book</button></a>
           </div>
         </div>
-
-      
+        <p class="pandq_p">
+          Please ensure you have read our FAQs and Policies before booking.
+          <br> <a href="#home">Click </a> to return to the top of the page.</p>
     </div>
   </div>
 
@@ -149,35 +150,35 @@
       <div class="footer_link-wrapper">
         <div class="footer_link-items">
           <h2>About us</h2>
-          <a href="/">Hairstyle</a>
+          <a href="#hairstyle_section">Hairstyle</a>
           <a href="/">Testimonals</a>
-          <a href="/">Terms of Service</a>
+          <a href="/faq_policy.html">Terms of Service</a>
         </div>
     </div>
     <div class="social_media">
       <div class="social_media-wrap">
         <div class="footer_logo">
-          <a href="/" id="footer_logo"><i class="fas faa gem"></i> KaliKrown</a>
+          <a href="#home_section" id="footer_logo"><i class="fas faa gem"></i> KaliKrown</a>
         </div>
         <p class="website_rights">KaliKrown2021. All rights reserved</p>
       </div>
       <div class="social_icon">
-        <a href="/" class="social_icon-link" target="_blank">
+        <a href="https://www.facebook.com" class="social_icon-link" target="_blank">
           <i class="fab fa-facebook"></i>
         </a>
-        <a href="/" class="social_icon-link" target="_blank">
+        <a href="https://www.instagram.com" class="social_icon-link" target="_blank">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="/" class="social_icon-link" target="_blank">
+        <a href="https://www.youtube.com" class="social_icon-link" target="_blank">
           <i class="fab fa-youtube"></i>
         </a>
-        <a href="/" class="social_icon-link" target="_blank">
+        <a href="https://twitter.com/?lang=en-gb" class="social_icon-link" target="_blank">
           <i class="fab fa-tw"></i>
         </a>
       </div>
     </div>
   </footer>
-  <script src="/testingapp.js"></script>
 
+  <script src="/testingapp.js"></script>
 </body>
 </html>

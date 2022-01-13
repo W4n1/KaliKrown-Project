@@ -359,8 +359,6 @@ table {
 /* feedback ruling ends here
 the style ruling starts here */
 
-
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -373,8 +371,6 @@ img{
 .container {
   padding: 1em;
 }
-
-
 
 .title {
   color:#938B86;
@@ -411,13 +407,14 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
-}
+  }
 
 .responsive {
   padding: 30px 30px 30px;
   float: left;
   width: 30%;
   margin-right: 25px;
+  }
 
 
 @media screen and (max-width: 500px) {
