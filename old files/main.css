@@ -450,5 +450,541 @@ div.desc {
 
 
 
-/*---------------------------------------------------CSS RULING-------------------------------------------------------------------------*/
+/*--------------------------------------------------- MEDIA CSS RULING NEW-------------------------------------------------------------------------*/
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width:600px) {
+  
+  #main_img {
+    margin-bottom: 299px;
+    /* margin-right: 96px; */
+    height: 109vh;
+    min-width: 1084px;
+    /* display: grid; */
+    /* max-width: 2000043px; */
+    /* object-fit: cover; */
+    margin-top: 338px;
+  }
+  
+  .main_content h1 {
+    font-size: 8rem;
+    margin-top: 28px;
+    padding-right: 105px;
+  }
+  
+  .main_content h2 {
+    font-size: 2rem;
+  }
+
+  .main_content p {
+    margin-top: 206px;
+    padding-right: 3px;
+    font-weight: bolder;
+    font-size: 45px;
+  }
+  
+  .main_btn{
+    padding: 5px 13px;
+    font-size: x-small;
+    margin-right: 32px;
+    margin-top: 6px;
+  }
+
+  #navbar_logo {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+  .navbar{
+    height: 40px;
+    display: flex;
+    font-size: .8rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .navbar_container {
+    height: 40px;
+  }
+  
+  /*----------------------- HAIRSTYLE 481px IPAD SCREEN---------------------*/
+  .hairstyle{
+    margin-top: -669px;
+    height: 928px;
+    max-width: 1042px;
+  }
+
+  .hairstyle h2{
+    margin: 5px 132px;
+    max-width: 708px;
+    font-size: 6rem;
+  }
+
+  .hairstyle p{
+    font-size: 1.1rem;
+    margin: 2px 12px 23px 0;
+  }
+
+  .hairstyle .card{
+    max-width: 269px;
+    height: 47vh;
+  }
+
+  .hairstyle .row .card img{
+    height: 244px;
+    max-width: 243px
+  }
+
+  .hairstyle_card summary{
+    top: 135px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .hairstyle .row{
+    margin: 9px -10px;
+    padding-left: 40px;
+  }
+
+  .hairstyle .row h5{
+    margin-left: -22px;
+    font-size: 14.5px;
+  }
+
+  p.pandq_p {
+    font-size: 27px;
+    font-style: italic;
+    width: 99%;
+    /* margin-right: -5px; */
+    padding: 69px;
+    text-align: center;
+  }
+  .container{
+    padding: 20px;
+    max-width: 302px;
+    margin-left: -21px;
+  }
+
+  .container h4{
+    font-size: 15px;
+  }
+
+  .container summary {
+    font-size: 13px;
+  }
+  
+  .hairstyle button {
+    width: 93px;
+    height: 52px;
+    margin: 15px 79px;
+    border-radius: 17px
+  }
+
+  /*FOOTER*/
+  .footer_link-items{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    margin: 35px;
+    text-align: left;
+    width: -13px;
+    box-sizing: border-box;
+    margin-left: -216px;
+  }
+
+  #footer_logo {
+    text-decoration: none;
+    font-size: 3rem;
+    padding-left: 765px;
+  }
+ 
+}
+
+
+@media screen and (max-width:600px){ /*mobile screens*/
+
+  /* body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  } */
+
+  #main_img {
+    margin-bottom: 548px;
+    /* margin-right: 24px; */
+    height: 65vh;
+    min-width: 700px;
+    /* display: grid; */
+    max-width: 389px;
+  }
+
+  .main_content h1 {
+    font-size: 3.5rem;
+    margin-top: -313px;
+    padding-right: 101px;
+  }
+  
+  .main_content h2 {
+    font-size: .8rem;
+    margin-bottom: 90px;
+  }
+
+  .main_content p {
+    margin-top: 11px;
+    padding-right: 3px;
+    font-weight: bolder;
+    font-size: 33px;
+  }
+
+  .main_btn{
+    padding: 9px 19px;
+    font-size: x-small;
+    margin-right: 29px;
+    margin-top: 11px;
+    width: 73px;
+  }
+
+  #navbar_logo {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+
+  .navbar{
+    height: 40px;
+    display: flex;
+    font-size: .8rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar_container {
+    height: 40px;
+  }
+
+/*----------------------- HAIRSTYLE SMALLEST SCREEN---------------------*/
+  .hairstyle{
+    margin-top: -698px;
+    height: 177vh;
+    max-width: 397px;
+    min-width: 700px;
+  }
+
+  .card h3 {
+    text-align: center;
+    align-items: center;
+    font-size: 37px;
+    height: 50px;
+  }
+
+  .hairstyle h2{
+    font-size: 2rem;
+    padding: 10px;
+    margin: 0 75px;
+    width: 200px;
+  }
+
+  .hairstyle p{
+    font-size: 1rem;
+    margin: 5px 0 23px 0;
+    text-align: center;
+  }
+
+  .hairstyle .card{
+    width: 430px;
+    height: 25vh;
+  }
+
+  .hairstyle .row .card img{
+    height: 114px;
+    width: 197px;
+  }
+
+  .hairstyle_card summary{
+    top: 135px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .hairstyle .row{
+    margin: 0 78px;
+    padding-bottom: 11px;
+  }
+
+  .hairstyle .row h5{
+    margin-left: -28px;
+    font-size: 12.5px;
+  }
+
+  .container{
+    padding: 6px;
+    max-width: 240px;
+    margin-left: -5px;
+  }
+
+  .container h4{
+    font-size: 12px;
+  }
+
+  .container summary {
+    font-size: 11px;
+    font-weight: 549;
+  }
+
+  .hairstyle button {
+    width: 75px;
+    height: 34px;
+    margin: 11px 52px;
+    border-radius: 23px;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+ 
+  
+  #main_img {
+    margin-bottom: 444px;
+    height: 743px;
+    min-width: 974px;
+    display: grid;
+    max-width: 748px;
+    margin-top: -103px;
+  }
+  
+  .main_content h1 {
+    font-size: 6.5rem;
+    margin-top: -311px;
+  }
+  
+  .main_content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 126px;
+  }
+
+  .main_content p {
+    margin-top: 118px;
+    padding-right: 3px;
+    font-size: 45px;
+  }
+  
+  .main_btn{
+    padding: 10px 21px;
+    margin-top: 3px;
+    font-size: 28px;
+  }
+
+  #navbar_logo {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+
+  .navbar{
+    height: 40px;
+    display: flex;
+    font-size: .8rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .navbar_container {
+    height: 40px;
+  }
+  
+  /*----------------------- HAIRSTYLE 769px Small laptop SCREEN---------------------*/
+  .hairstyle{
+    height: 160vh;
+    max-width: 789px;
+    min-width: 1049px;
+    margin-top: -412px;
+  }
+
+  .hairstyle h2{
+    margin: 9px 234px;
+    width: 325px;
+    font-size: 54px;
+    padding-top: 52px;
+  }
+
+  .hairstyle p{
+    font-size: 25px;
+    font-style: italic;
+    width: 100%;
+    margin-left: 1px;
+    text-align: center;
+  }
+
+  .hairstyle .card{
+    max-width: 312px;
+    height: 28vh;
+  }
+
+  .hairstyle .row .card img{
+    height: 200px;
+    width: 301px;
+  }
+
+  .hairstyle_card summary{
+    top: 135px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .hairstyle .row{
+    margin: 0px 192px;
+    padding-bottom: 22px;
+  }
+
+  .hairstyle .row h5{
+    margin-left: -28px;
+    font-size: 12.5px;
+  }
+
+  .container{
+    padding: 9px;
+    max-width: 310px;
+    margin-left: -50px;
+  }
+
+  .container h4{
+    font-size: 15px;
+  }
+
+  .container summary {
+    font-size: 13px;
+  }
+  
+  .hairstyle button {
+    width: 75px;
+    height: 34px;
+    margin: 11px 52px;
+    border-radius: 23px;
+  }
+
+  .row div p{
+    font-size: 14px;
+    margin-left: -118px;
+    width: 478px;
+  }
+}
+
+@media screen and (max-width:992px) {/* classes to be triggered once device meets 960px for the nav bar */
+  .navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+  .navbar_menu{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px; /* navbar options to be hidden until click is activated with JS ruling*/
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
+  }
+  .navbar_menu.active{  /*JS will trigger this ruling*/
+    background: #948b80;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.3rem;
+  }
+  #navbar_logo{
+    padding-left: 25px;
+  }
+  .navbar_toggle .bar{
+    width: 25px;
+    height: 1px;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+    background: rgb(71, 21, 21);
+    font-weight: bolder;
+  }
+  .navbar_links{
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    display: table;
+  }
+  #mobile-menu{
+    position: absolute;
+    top: 13%;
+    right: 14%;
+    transform: translate(45%, -3%);
+  }
+  .navbar_btn{
+    padding: 2rem;
+    width: auto;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    margin: -50%;
+  }
+  .navbar_toggle .bar{  /*a little bar action on the corner when device screen is smaller*/
+    display: block;
+    cursor: pointer;
+  }
+  #mobile-menu.is-active .bar:nth-child(2){  /*ruling targeting the 2nd link of anchor 2nd child for animation  created in JS*/ 
+    opacity: 0;
+  }
+  #mobile-menu.is-active .bar:nth-child(1){  /*ruling targeting the 1st child for animation that will be created in JS*/ 
+    transform: translatey(8px) rotate(45deg);
+  }
+  #mobile-menu.is-active .bar:nth-child(3){  /*ruling targeting the 3rd child for animation that will be created in JS*/ 
+    transform: translatey(-8px) rotate(-45deg);
+  }
+}
+
+  /* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px){ 
+
+  .hairstyle h1{
+    font-size: 3rem;
+    margin: 1rem;
+  }
+
+  .hairstyle p {
+    font-size: 2.3rem;
+    font-style: italic;
+    width: 100%;
+    margin-left: 1px;
+    text-align: center;
+  }
+
+  p.title {
+    font-size: 10px;
+    color: #3c2002;
+    margin-top: 1rem;
+    margin-left: 0px;
+  }
+
+  .card h3{
+    text-align: center;
+    align-items: center;
+    font-size: 27px;
+    height: 30px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+
+
+}
