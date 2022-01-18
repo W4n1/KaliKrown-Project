@@ -4,6 +4,7 @@
   padding: 0;
   font-family: sans-serif, Lora, Roboto, Arial, Arial, Helvetica, sans-serif;
 }
+/* smallest screen size - 360px  ruling below*/
 
 /*--------------------------------------------------------------Navbar section-----------------------------------------------------------------------*/
 .navbar{
@@ -15,7 +16,7 @@
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 999; /* this ruling makes it so that the nav bar is always on top of ever part of page*/
+  z-index: 999; /* this ruling makes it so that the nav bar is always on top of every part of page*/
 }
 
 .navbar_container{
@@ -153,37 +154,39 @@ div.main_content{
   background-image: linear-gradient(to top, #3c2002 0%, #eff0f6 100%);
   background-size: 100%;
   /* margin-bottom: -150%; */
-  font-size: 88%;
+  font-size: 82%;
 }
 
 .main_content p{
   font-size: 1.6rem;
   font-weight: bolder;
-  text-shadow: 2px 2px rgb(71 21 21 / 24%);
+  text-shadow: 2px 2px rgb(71 21 21 / 78%);
+  color: #eff0f6;
+  padding-top: 4em;
 }
 
 .main_btn{
-  font-size: 0.8rem;
-  background-color: #67adcde0;
+  background-color: #67adcded;
   padding: 0em -1em;
   border: none;
   border-radius: 38px;
   color: #fff;
   cursor: pointer;
-  /* position: relative; */
+  position: relative;
   transition: all 0.39s;
   /* outline: none; */
-  /* margin: 2px 3em; */
+  margin: 2px 3em;
   justify-content: center;
   align-items: center;
-  max-width: 21%;
+  max-width: 17%;
+  padding: 6px;
 }
 
 .main_btn a{
   z-index: 2;
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: .91rem;
   font-weight: bolder;
 }
 
@@ -209,7 +212,7 @@ div.main_content{
 
 #main_img{
   background-color: #bcb3a0;
-  height: 100%;
+  height: 130%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -223,7 +226,7 @@ div.main_content{
   flex-direction: column;
   align-items: center;
   height: 100%;
-  /* margin-top: 129vh; */
+  margin-top: 12vh;
   z-index: 1;
 }
 
@@ -235,36 +238,42 @@ div.main_content{
 }
 
 .hairstyle p{
-  font-size: 17px;
-  color: #eee;
-  /* margin-top: 2rem; */
-  /* margin-left: 301px; */
-  font-weight: bold;
-  /* width: 97%; */
   text-align: center;
+  font-size: 1em;
+  font-weight: 700;
 }
 
 
-/* ruling to the three images with the boxes*/
+                                                  /* ruling to the three images with the boxes*/
+.style {
+  display: block;
+  margin-right: auto;
+  width: 72%;
+}
+
 .row {
-  margin: 0 7vh;
   align-items: center;
   font-style: italic;
-  text-shadow: 1px 1px #96a5bf;
-  
+  /* display: block; */
+  margin-left: auto;
+  /* margin-right: auto; */
+  width: 70%;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%);
-  background-color: #fff;
-  max-width: 99%;
+  background-color: #725f4b;
+  /*width: 50%;
+  width: max-content;*/
 }
 
 .card h3{
   text-align: center;
-  align-items: center;
-  font-size: 1.1em;
+  font-size: 1.3em;
+  color: #eee;
+  margin-top: 1em;
 }
+
 
 .column {
   /*float: left;*/
@@ -282,8 +291,8 @@ div .card:hover{ /*hover zoom in and out effect*/
 }
 
 .container {
-  padding: 10px;
-  width: 100%;
+  padding: 0.5px;
+  flex-wrap: wrap;
 }
 
 .container h4 {
@@ -304,55 +313,56 @@ p.title {
   font-size: 1.2em;
   color: #f5f6fe;
   margin-top: 0.5rem;
+  text-shadow: none;
+  color: #0e0d11;
+  background-color: #77aec454;
 }
 
 .hairstyle h5 {
   font-size: .9em;
   text-align: center;
+  padding-top: 0.6em;
 }
 
 .hairstyle button {
   display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    border: none;
-    /* outline: none; */
-    /* border-radius: 26px; */
-    background: #67adcdcf;
-    /* color: white; */
-    /* font-weight: bolder; */
-    text-decoration: none;
-    margin: 3% 32% 72px;
+  /* justify-content: center; */
+  align-items: center;
+  border: none;
+  /* outline: none; */
+  /* border-radius: 26px; */
+  background: #67adcdcf;
+  /* color: white; */
+  /* font-weight: bolder; */
+  text-decoration: none;
+  margin: 3% 21% 72px;
 }
 
 p.pandq_p {
   font-size: .7em;
 }
 
-
 /* --------------------------------------------------------------Feedback section ------------------------------------------------------------*/
 
 #feedback_section {
-  font-size: 75px;
-  margin: 20px;
+  margin: 7px;
   text-align: center;
+  font-size: 2.56em;
+  color: #645749;
   }
 
 .textbox{
-  padding: 0 194px 70px 227px;
-  border: solid 10px;
+  padding: 19px;
 }
 
 .feedback div,
 form,
 input,
 p {
-  outline: none;
-  /* font-family: Roboto, Arial, sans-serif; */
-  /* font-size: 20px; */
-  color: #666;
-  /* line-height: 25px; */
-  /* padding-top: 17px; */
+  font-size: 11px;
+  color: rgb(71 21 21);
+  line-height: 15px;
+  padding-top: 7px;
 }
 
 
@@ -363,14 +373,11 @@ h2 {
 }
 
 h3 {
-  font-weight: bold;
-  font-size: 1.4em;
-  margin: 1em 0px 0px;
+  margin-top: 1.5em;
 }
 
 small{
-  font-size: 22px;
-    margin-left: 349px;
+  font-size: .9em;
 }
 
 .feedback h2 h4 {
@@ -393,12 +400,12 @@ small{
 }
 
 form h4 {
-  padding-top: 71px;
+  padding-top: 3em;
 }
 
 input {
   width: 100%;
-  max-width: 400px;
+  max-width: 1400px;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -410,10 +417,9 @@ textarea {
   outline: none;
   padding: 1em;
   border-radius: 10px;
-  width: 99%;
-  height: 207px;
+  width: 100%;
+  height: 112px;
   font-family: Roboto, Arial, sans-serif;
-  margin-left: 4px;
 }
 
 .asterisk {
@@ -429,19 +435,20 @@ label {
 th,
 td {
   width: 3%;
-  padding: 24px 0;
+  padding: 5px 0;
   border-bottom: 1px solid #ccc;
   text-align: center;
   vertical-align: unset;
-  line-height: 38px;
+  line-height: 15px;
   font-weight: 400;
   word-break: break-all;
+  font-size: .61em;
 }
 
 .first-col {
-  width: 8%;
+  width: 6%;
   text-align: left;
-  font-size: 27px;
+  font-size: .7em;
 }
 
 table {
@@ -449,8 +456,13 @@ table {
 }
 
 .btn-block {
-  margin-top: 76px;
+  margin-top: 2em;
   text-align: center;
+}
+
+.btn-block button {
+  width: 73px;
+  height: 26px;
 }
 
 button {
@@ -464,13 +476,48 @@ button {
   font-size: 16px;
   color: #fff;
   cursor: pointer;
-  border: 2px solid rgb(71 21 21);
 }
 
 
 .btn-block button:hover {
   background-color: #301c0c;
 }
+
+/*---------------------------------------------------------------------Appointment policy-----------------------------------------------------*/
+
+div.appointment_Policy h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+section.policy_content {
+  margin: 1em;
+}
+
+.apppointment-option {
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.policy_button {
+  width: 5.5em;
+  height: 2em;
+  text-decoration: none;
+  padding: 10px;
+  height: 100%;
+  outline: none;
+  border-radius: 35px;
+  background: #77aec4d9;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.39s;
+}
+
+.appointment-option {
+  text-align: center;
+}
+
 
 /*-------------------------------------------------------------footer CSS----------------------------------------------------------------------*/ 
 .footer_containter{
@@ -511,12 +558,12 @@ justify-content: center;
 
 .footer_link-items{
   display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 1%;
-    text-align: left;
-    box-sizing: border-box;
-    margin-left: 5%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1%;
+  text-align: left;
+  box-sizing: border-box;
+  margin-left: 5%;
 }
 
 footer .fa-gem{/* for the krown on the footer logo*/
@@ -563,7 +610,7 @@ footer .fa-gem{/* for the krown on the footer logo*/
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 81vh;
+    height: 91vh;
     font-size: 3.3rem;
   }
   #navbar_logo{
@@ -615,4 +662,245 @@ footer .fa-gem{/* for the krown on the footer logo*/
   #mobile-menu.is-active .bar:nth-child(3){  /*ruling targeting the 3rd child for animation that will be created in JS*/ 
     transform: translatey(-8px) rotate(-45deg);
   }
+}
+
+@media screen and (min-width: 576px){
+  .main_content h1 {
+    font-size: 6.5rem;
+  }
+  .main_content h2 {
+    font-size: 122%;
+  }
+  .main_content p {
+    font-size: 2rem;
+    padding-top: 8em;
+  }
+
+  .main_btn{
+    margin: 16px 3em;
+  }
+
+  /* Hairstyle 576px screen display size */
+  .hairstyle{
+    background-color: #bcb3a0;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 19vh;
+    z-index: 1;
+  }
+
+  .style {
+    height: 73vh;
+    margin-right: 1em;
+    display: block;
+    margin-left: auto;
+    width: 87%;
+    margin-left: auto;
+  }
+
+  .card h3 {
+    font-size: 1em;
+  }
+
+  .container h4 {
+    display: contents;
+    font-size: 1.45em;
+  }
+
+  .container {
+    padding: 0.5px;
+    flex-wrap: wrap;
+    /* width: 33%; */
+    font-size: .5em;
+    padding: 20px;
+    /* max-width: 302px; */
+    margin-left: -21px;
+  }
+
+  .hairstyle .card{
+    float: left;
+    width: 84.33%;
+    padding: 5px;
+  }
+
+  .hairstyle .row .card img{
+    height: 194px;
+  }
+
+  .hairstyle .card summary{
+    top: 135px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .hairstyle .row h5{
+    font-size: .65em;
+  }
+
+  p.pandq_p {
+    font-size: 27px;
+    font-style: italic;
+    width: 99%;
+    /* margin-right: -5px; */
+    padding: 69px;
+    text-align: center;
+  }
+
+  .container summary {
+    font-size: 2em;
+  }
+  
+  .hairstyle button {
+    border-radius: 17px;
+    margin: 5% 15% 21px;
+  }
+
+  .row {
+    font-style: italic;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  .hairstyle p {
+    font-size: .9em;
+    padding: 0 0 1em;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .main_content h1 {
+    font-size: 8.5rem;
+  }
+
+  .main_content h2 {
+    font-size: 177%;
+  }
+
+  #main_img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .main_content p {
+    font-size: 261%;
+    padding-top: 6em;
+  }
+
+  .main_btn {
+    margin: 18px 7em 0;
+    max-width: 15%;
+    padding: 16px;
+  }
+
+  .hairstyle{
+  margin-top: 0;
+  }
+
+  .hairstyle p {
+    font-size: 2em;
+    padding: 0 0 0.5em;
+    line-height: 1em;
+  }
+
+  .container h4{
+    font-size: 15px;
+  }
+
+  .container summary {
+    font-size: 13px;
+  }
+
+  .container {
+    padding: 0.5px;
+    font-size: .5em;
+    padding: 2em;
+    margin-left: -21px;
+  }
+
+  .hairstyle button {
+    width: 75px;
+    height: 34px;
+    margin: 11px 52px;
+    border-radius: 23px;
+  }
+
+  .row div p{
+    font-size: 14px;
+    margin-left: -118px;
+    width: 478px;
+  }
+
+  .card h3 {
+    font-size: 1.3em;
+    margin-top: 0.1em;
+  }
+
+  .hairstyle .row .card img {
+    width: 100%;
+  }
+
+  .pandq_p {
+    font-size: .5em;
+  }
+
+
+}
+
+@media screen and (min-width: 992px){
+  .main_content p {
+    font-size: 281%;
+    padding-top: 0em;
+  }
+
+  .style {
+    height: 71vh;
+    margin-right: 3em;
+  }
+
+  .hairstyle .card {
+    /* float: left; */
+    width: 91.33%;
+    padding: 5px;
+  }
+
+  .hairstyle .row .card img {
+    height: 42vh;
+  }
+
+  .row div p {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .hairstyle button {
+    margin: 11px 84px;
+  }
+
+  /* Feedback*/
+
+  .feedback div, form, input, p {
+    font-size: 1.1em;
+    color: rgb(71 21 21);
+    line-height: 26px;
+    padding-top: 3px;
+  }
+
+  .first-col {
+    width: 4%;
+    font-size: 1em;
+  }
+
+  th, td {
+    width: 3%;
+    padding: 8px 0;
+    font-size: .99em;
+  }
+
+  .btn-block button {
+    width: 77px;
+    height: 37px;
+}
+
 }
