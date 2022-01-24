@@ -13,14 +13,13 @@ button {   /* this ruling to apply to every button unless overwritten*/
   text-decoration: none;
   padding: 10px 20px;
   height: 100%;
-  /* width: 100%; */
   border: none;
   outline: none;
   border-radius: 35px;
   background: rgb(71 21 21);
   color: #8dc2da;
   font-weight: bold;
-  margin: 5px 117px;
+  margin: auto;
   cursor: pointer;
   transition: all 0.39s;
 }
@@ -157,14 +156,17 @@ div.main_content{
 }
 
 .main_content p{
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: bolder;
-  text-shadow: 2px 2px rgb(71 21 21 / 78%);
-  color: #eff0f6;
+  text-shadow: 2px 2px rgb(124 175 194 / 67%);;
+  color: rgb(71 21 21);;
+  text-align: center;
+  display: inline;
 }
 
 .main_btn{
   background-color: #67adcded;
+  margin: auto;
 }
 
 .main_btn a{
@@ -172,10 +174,8 @@ div.main_content{
   text-decoration: none;
   font-size: .91rem;
   font-weight: bolder;
-  color: rgb(114 95 75);
+  color: rgb(71 21 21);
 }
-
-
 
 .main_btn:hover{
   color: rgb(203, 225, 247);
@@ -191,33 +191,29 @@ div.main_content{
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 134%;
+  height: 23em;
 }
 
 
 /* ---------------------------------------------------- Hairstyle section---------------------------------------------------------------------*/
 .hairstyle{
-  background-color: #bcb3a0;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  margin-top: 12vh;
   z-index: 1;
 }
 
 .hairstyle h2{
-  font-size: 3.55rem;
-  font-weight: bolder;
-  color: rgb(114 95 75);
-  text-align: center;
+  font-size: 4rem;
+  color: rgb(71 21 21);
   padding: 0.5em 0 0.3em;
+  text-shadow: 6px 0 0 #ccc;
 }
 
 .hairstyle p{
   text-align: center;
-  font-size: 1em;
+  font-size: 1.35em;
   font-weight: 700;
-  padding: 0.5em 1em 1.5em;
+  padding: 0 1em 1em;
+  color: #7f7767;
+  line-height: 1em;
 }
 
 /* ruling to the three images with the boxes*/
@@ -238,15 +234,14 @@ div.main_content{
 
 .card {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 46%);
-  background-color: #725f4b;
-  /*width: 50%;
-  width: max-content;*/
+  background-color:#e8e5df;
+  border-radius: 0 2em 0 2em;
 }
 
 .card h3{
   text-align: center;
   font-size: 1.3em;
-  color: #eee;
+  color: rgb(107 90 63);
 }
 
 .column {
@@ -256,6 +251,7 @@ div.main_content{
 
 div .card img{
   max-width: 100%;
+  border-radius: 0 2em;
 }
 
 div .card:hover{ /*hover zoom in and out effect*/
@@ -276,6 +272,7 @@ div .card:hover{ /*hover zoom in and out effect*/
 .container summary {
   margin-top: 1em;
   font-size: .85rem;
+  display:inline ;
 }
 
 details {
@@ -284,78 +281,61 @@ details {
 }
 
 p.title {
-  font-size: 1.2em;
-  color: #f5f6fe;
+  font-size: 1em;
   margin-top: 0.5rem;
-  text-shadow: none;
   color: #0e0d11;
-  background-color: #77aec454;
+  background-color: #bcb3a057;
+  font-weight: 100;
+  border: solid 2px #ccc;
 }
 
 .hairstyle h5 {
   font-size: .65em;
   text-align: center;
-  padding-top: 0.6em;
 }
 
 .hairstyle button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  height: 100%;
-  border: none;
-  outline: none;
-  border-radius: 35px;
-  background: rgb(71 21 21);
-  color: white;
-  font-weight: bold;
-  margin: 0.5em 3em 2em;
-  cursor: pointer;
-  transition: all 0.39s;
+  width: 6em;
+  height: 3em;
+  margin-bottom: 1em;
 }
 
 .hairstyle button a{
   z-index: 2;
-  font-size: 1.5rem;
+  font-size: .79rem;
   color: rgb(124 175 194);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
-  font-weight: bold;
+  font-weight: 900;
 }
 
-p .pandq_p {
-  font-style: italic;
-    padding: 1em;
-    text-align: center;
+p.pandq_p {
+  font-size: .55em;
+  color: #725f4b;
 }
+
 /* --------------------------------------------------------------Feedback section ------------------------------------------------------------*/
 
 #feedback_section {
-  margin: 7px;
   text-align: center;
   font-size: 2.56em;
-  color: #645749;
+  color: rgb(71 21 21 / 90%);
   }
 
 .textbox{
-  padding: 19px;
+  padding: 3em;
 }
 
 .feedback div,
 form,
 input,
 p {
-  font-size: 11px;
-  color: rgb(71 21 21);
-  line-height: 15px;
-  padding-top: 7px;
-  text-align: justify;
-}
+  font-size: .56rem;
+    color: rgb(71 21 21);
+    line-height: 1.5em;
+    padding-top: 0.51em;
+    text-align: justify;
+  }
 
 
 h2 {
@@ -388,7 +368,7 @@ small{
 }
 
 form h4 {
-  padding-top: 1em;
+  padding-top: 2em;
 }
 
 form h3 {
@@ -421,7 +401,7 @@ textarea {
 label {
   font-weight: bold;
   display: block;
-  margin-top: 27px;
+  margin-top: 1em;
 }
 
 th,
@@ -438,7 +418,7 @@ td {
 }
 
 .first-col {
-  width: 6%;
+  width: 5%;
   text-align: left;
   font-size: .7em;
 }
@@ -473,10 +453,11 @@ section.policy_content {
 
 .policy_content p{
   font-size: .79em;
-  background-color: #8dc2da1c;
-  padding: .91em;
+  background-color: #8dc2da24;
+  padding: 0.91em;
   line-height: 1.3em;
   text-align: center;
+  border-radius: 3em 2px;
 }
 
 .policy_content details{
@@ -622,8 +603,6 @@ p.website_rights {
 }
 
 
-
-
 @media screen and (max-width:992px) {/* classes to be triggered once device meets 960px for the nav bar */
   .navbar_container{
     display: flex;
@@ -681,14 +660,6 @@ p.website_rights {
     transform: translate(45%, -3%);
   }
 
-  .button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 35px;
-    margin: -50%;
-  }
   .navbar_toggle .bar{  /*a little bar action on the corner when device screen is smaller*/
     display: block;
     cursor: pointer;
@@ -705,6 +676,11 @@ p.website_rights {
 }
 
 @media screen and (min-width: 576px){
+  
+  img#main_img {
+    height: 35em;
+  }
+
   .main_content h1 {
     font-size: 6.5rem;
   }
@@ -713,23 +689,21 @@ p.website_rights {
   }
   .main_content p {
     font-size: 3rem;
-    padding-top: 6em;
+    padding-top:18rem;
+    display: block;
   }
 
-  .main_btn{
-    margin: 2em 17em;
+  button.main_btn {
+    margin: 1rem auto;
   }
 
   /* Hairstyle 576px screen display size */
-  .hairstyle{
-    background-color: #bcb3a0;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    margin-top: 32vh;
-    z-index: 1;
+
+  .hairstyle h2{
+    font-size: 5.55rem;
+    padding: 0.1em 0 0.2em;
   }
-  
+
   .hairstyle p {
     font-size: 1.4em;
     padding: 0 1em 1em;
@@ -739,24 +713,17 @@ p.website_rights {
   p.pandq_p{
     font-style: italic;
     padding: 1em;
-    text-align: center;
     font-size: 1rem;
   }
 
   .style {
-    height: 70vh;
-    margin-right: 1em;
+    height: 61vh;
     display: block;
-    margin-left: auto;
+    margin: auto;
     width: 89%;
   }
 
   .card h3 {
-    font-size: 1em;
-  }
-
-  .container h4 {
-    display: contents;
     font-size: 1em;
   }
 
@@ -767,10 +734,10 @@ p.website_rights {
     margin-left: -3em;
   }
 
-  .hairstyle .card{
+.hairstyle .card{
     float: left;
-    width: 84.33%;
-    padding: 5px;
+    width: 91.33%;
+    padding: 1px;
   }
 
   .hairstyle .row .card img{
@@ -785,11 +752,6 @@ p.website_rights {
 
   .container summary {
     font-size: 2em;
-  }
-  
-  .hairstyle button {
-    border-radius: 17px;
-    margin: 5% 15% 21px;
   }
 
   .row {
@@ -841,21 +803,11 @@ p.website_rights {
   }
 
   .main_content h2 {
-    font-size: 177%;
-  }
-
-  #main_img {
-    height: 100%;
-  
+    font-size: 1.7em;
   }
 
   .main_content p {
-    font-size: 261%;
-    padding-top: 6em;
-  }
-
-  .main_btn {
-    margin: 1.4em 22em 0;
+    padding-top: 5em;
   }
 
   .main_btn a {
@@ -879,13 +831,11 @@ p.website_rights {
     padding: 0.3em 0 0.1em;
   }
 
-  .container h4{
-    font-size: 17.35px;
+.container h4{
+    display: contents;
+    font-size: 1.45em;
   }
 
-  .container summary {
-    font-size: 2.75em;
-  }
 
   .container {
     padding: 0.5px;
@@ -938,16 +888,11 @@ p.website_rights {
 @media screen and (min-width: 992px){
   .main_content p {
     font-size: 3.99em;
-    padding-top: 5.9em;
+    padding-top: 4.5em;
   }
 
   .main_btn {
     margin: 1.4em 31em 0;
-  }
-
-  .style {
-    height: 71vh;
-    margin-right: 3em;
   }
 
   /* Hairstyle  992px screen */
@@ -1052,8 +997,7 @@ p.website_rights {
     font-size: 2.2rem;
   }
   .main_content p {
-    margin-bottom: 1rem;
-    text-align: center;
+    padding-top: 3.1em;
   }
 
   /* Hairstyle section */
