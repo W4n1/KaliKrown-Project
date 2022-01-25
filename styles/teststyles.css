@@ -514,13 +514,14 @@ section.policy_content {
   font-size: 3.5em;
   text-align: center;
   width: 100%;
-  padding: 57% 0;
   background-color: #725f4b54;
   height: 100vh;
   text-shadow: 2px 2px #3c2002;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
-  align-content: flex-start;
+  align-items: center;
+  border: solid 179px white;
 }
 
 
