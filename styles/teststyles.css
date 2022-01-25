@@ -161,7 +161,8 @@ div.main_content{
   text-shadow: 2px 2px rgb(124 175 194 / 67%);;
   color: rgb(71 21 21);;
   text-align: center;
-  display: inline;
+  padding-top: 12.81rem;
+  display: block;
 }
 
 .main_btn{
@@ -201,7 +202,7 @@ div.main_content{
 }
 
 .hairstyle h2{
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: rgb(71 21 21);
   padding: 0.5em 0 0.3em;
   text-shadow: 6px 0 0 #ccc;
@@ -700,7 +701,7 @@ p.website_rights {
   /* Hairstyle 576px screen display size */
 
   .hairstyle h2{
-    font-size: 5.55rem;
+    font-size: 4.55rem;
     padding: 0.1em 0 0.2em;
   }
 
@@ -994,12 +995,20 @@ p.website_rights {
     font-size: 3.2rem;
   }
   .main_content p {
+<<<<<<< HEAD
     padding-top: 6.7em;
     font-size: 5.5em;
   }
 
   img#main_img {
     height: 57em;
+=======
+    padding-top: 6.35em;
+  }
+
+  img#main_img {
+    height: 49em;
+>>>>>>> 94494f13513c620b97f3fcc0b2328e524a824c0b
   }
 
   /* Hairstyle section */
@@ -1024,8 +1033,13 @@ p.website_rights {
     margin: 16px 129px;
   }
   p.pandq_p {
+<<<<<<< HEAD
     font-size: 1.9rem;
     padding-top: 2em;
+=======
+    font-size: 1rem;
+    padding-top: 12em;
+>>>>>>> 94494f13513c620b97f3fcc0b2328e524a824c0b
   }
 
   /* Appointment Policy*/
